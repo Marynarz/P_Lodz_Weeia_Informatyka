@@ -36,11 +36,7 @@ public:
   {
     return imagine;
   }
-  ostream& operator<<(ostream &s)
-  {
-     s<<this->getReal()<<"+"<<this->getImagine()<<"i";
-    return s;
-  }
+  friend ostream & operator<<(ostream &s, const ComplexC &C);
   bool operator==(ComplexC c)
   {
     if((this -> real == c.getReal())&& (this->imagine == c.getImagine()))
@@ -55,15 +51,34 @@ public:
   {
     return ComplexC(this-> real - c.getReal(),this-> imagine - c.getImagine());
   }
-  
+ /* ComplexC & operator++()
+  {
+    this->real++;
+    this->imagine++;
+    return *this;
+  }
+  ComplexC operator++(int)
+  {
+    ComplexC
+  }
+  ComplexC operator--()
+  {
+    return ComplexC(this-> real-1, this->imagine -1);
+    }
+  */
 };
+ostream & operator<<(ostream &s, ComplexC & C)
+{
+    return s<<C.getReal()<<"+"<<C.getImagine()<<"i";
+}
   
 int main()
 {
   ComplexC a(1,1);
   ComplexC b(1,1);
-  bool co = a==b;
-  cout <<co;
+  ComplexC c = a+b;
+    cout <<c<<endl;
+   
   
   return 0;
 }
