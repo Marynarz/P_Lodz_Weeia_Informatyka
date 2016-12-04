@@ -75,6 +75,16 @@ public:
 	this -> imagine -= C.getImagine();
 	return *this;
     }
+    void showParams(string name)	//wyswietlanie Complexa
+    {
+	cout <<"-----------"<<endl;
+	cout <<"COMPLEX:\t\t"<<name<<endl;
+	cout <<"Czesc rzeczywista:\t"<<getReal()<<endl;
+	cout <<"Czesc urojona:\t\t"<<getImagine()<<endl;
+	cout <<"Modul:\t\t\t"<<getMod()<<endl;
+	cout <<"Faza:\t\t\t"<<getPhase()<<endl;
+	cout <<"-----------"<<endl;
+    }
 };
 ostream & operator<<(ostream &s, ComplexC & C)	//ostream do couta
 {
@@ -85,44 +95,33 @@ int main()
 {
     ComplexC a(1,1);
     ComplexC b(2,1);
+    
     cout <<"++++COMPLEX++++"<<endl;
-    cout <<"------"<<endl<<"Complex a: ";
-    cout <<a <<endl;
-    cout <<"Czesc rzeczywista: "<<a.getReal()<<endl;
-    cout <<"Czesc urojona: "<<a.getImagine()<<endl;
-    cout <<"Modul: "<<a.getMod()<<endl;
-    cout <<"Faza: "<<a.getPhase()<<endl;
-    cout <<"------"<<endl<<"Complex b: ";
-    cout <<b<<endl;
-    cout <<"Czesc rzeczywista: "<<b.getReal()<<endl;
-    cout <<"Czesc urojona: "<<b.getImagine()<<endl;
-    cout <<"Moudl: "<<b.getMod()<<endl;
-    cout <<"Faza: "<<b.getPhase()<<endl;
+    cout<<a<<endl;
+    a.showParams("a");
+    cout<<b<<endl;
+    b.showParams("b");
     cout <<"++++++++++++++"<<endl;
     
     cout <<"-----DODAWANIE-----"<<endl;
-    cout <<"c=a+b   :  ";
+    cout <<"c=a+b:\t";
     ComplexC c = a+b;
     cout <<c<<endl;
-    cout <<"a+=b  :  ";
+    cout <<"a+=b:\t";
     a+=b;
     cout <<a<<endl<<endl;
     
     cout <<"-----ODEJMOWANIE-----"<<endl;
-    cout <<"c=a-b  :  ";
+    cout <<"c=a-b:\t";
     cout <<c<<endl;
-    cout <<"a-=b  :  ";
+    cout <<"a-=b:\t";
     a-=b;
     cout <<a<<endl<<endl;
     cout <<"-----POROWNANIE-----"<<endl;
     bool czy = a==b;
-    cout <<"a==b  :  "<<czy<<endl;
+    cout <<"a==b:\t"<<czy<<endl;
     czy = a==c;
-    cout <<"a==c  :  "<<czy<<endl<<endl;
-    
-    //a += b;
-    //cout <<a<<endl;
-   
+    cout <<"a==c:\t"<<czy<<endl<<endl;
   
   return 0;
 }
