@@ -1,7 +1,9 @@
 #include "Asocjacja.hpp"
-Asocjacja::Asocjacja(char* key, double value)
+Asocjacja::Asocjacja()
 {
-  head->next = NULL;
-  head->key = key;
-  head->value = value;
+  
+}
+Asocjacja::Asocjacja(const Asocjacja & prev)
+{
+  head->prev
 }
