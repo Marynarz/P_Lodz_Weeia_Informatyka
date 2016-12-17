@@ -6,14 +6,14 @@
 using namespace std;
 class ComplexC
 {
-private:	//zmienne
+private:
   double real;
   double imagine;
 
 public:
-  ComplexC(double real =0, double imagine =0);	//mega zajebisty konstruktor - tylko z tego poziomu mozna ustawic czesc rzeczywista i urojona
-  ~ComplexC();	//czy potrzebny jest destruktor?
-private:	//settery dla zmiennych
+  ComplexC(double real =0, double imagine =0);
+  ~ComplexC();
+private:
   void setReal(int real);
   void setImagine(int imagine);
 public:
@@ -22,16 +22,22 @@ public:
   double getMod();
   double getPhase();
   bool operator==(ComplexC c);
-  ComplexC operator+(ComplexC & c);
-  ComplexC operator-(ComplexC & c);
+  //ComplexC operator+(ComplexC & c);
+  //ComplexC operator-(ComplexC & c);
   ComplexC & operator+=(ComplexC & C);
   ComplexC & operator-=(ComplexC & C);
   void showParams();
-  ComplexC operator*(ComplexC C);
+  //ComplexC operator*(ComplexC C);
   ComplexC & operator*=(ComplexC C);
-  ComplexC operator/(ComplexC & C);
+  //ComplexC operator/(ComplexC & C);
   ComplexC & operator/=(ComplexC & C);
   friend ostream & operator<<(ostream &s, const ComplexC &C);
   friend int operator*(int a, ComplexC C);
 };
+
+ostream & operator<<(ostream &s, ComplexC & C);	//ostream do couta
+ComplexC operator*(const ComplexC & A, const ComplexC & C);
+ComplexC operator+(ComplexC a, ComplexC C);
+ComplexC operator-(ComplexC A,ComplexC c);	//odejmowanie
+ComplexC operator/(ComplexC A, ComplexC C); //dzielenie
 #endif

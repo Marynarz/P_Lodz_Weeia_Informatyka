@@ -6,20 +6,6 @@
 
 using namespace std;
 
-
-ostream & operator<<(ostream &s, ComplexC & C)	//ostream do couta
-{
-    return s<<C.getReal()<<"+"<<C.getImagine()<<"i";
-}
-int operator*(int a, ComplexC C)
-{
-  return C.getReal()*a;
-}
-int operator+(int a, ComplexC C)
-{
-    return C.getReal()+a;
-}
-
 int main()
 {
     ComplexC a(1,1);
@@ -58,7 +44,7 @@ int main()
     a*=b;
     cout <<a<<endl;
     a*=10;
-    a=10*a;
+    a=10*b;
     cout <<a<<endl<<endl;
 
     cout <<a<<endl<<b<<endl<<c<<endl;

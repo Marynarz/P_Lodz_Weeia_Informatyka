@@ -1,8 +1,8 @@
 #include "ComplexC.hpp"
-ComplexC::ComplexC(double real, double imagine)	//mega zajebisty konstruktor - tylko z tego poziomu mozna ustawic czesc rzeczywista i urojona
+ComplexC::ComplexC(double real, double imagine):real(real),imagine(imagine)	//mega zajebisty konstruktor - tylko z tego poziomu mozna ustawic czesc rzeczywista i urojona
   {
-    setReal(real);
-    setImagine(imagine);
+    /*setReal(real);
+    setImagine(imagine);*/
   }
 ComplexC::~ComplexC()	//czy potrzebny jest destruktor?
   {
@@ -40,14 +40,14 @@ void ComplexC::setReal(int real)
       return true;
     return false;
   }
-  ComplexC ComplexC::operator+(ComplexC & c)	//dodawanie
+  /*ComplexC ComplexC::operator+(ComplexC & c)	//dodawanie
   {
     return ComplexC((getReal() + c.getReal()),(getImagine() + c.getImagine()));
-  }
-  ComplexC ComplexC::operator-(ComplexC & c)	//odejmowanie
+  }*/
+  /*ComplexC ComplexC::operator-(ComplexC & c)	//odejmowanie
   {
     return ComplexC((getReal() - c.getReal()),(getImagine() - c.getImagine()));
-  }
+  }*/
     ComplexC & ComplexC::operator+=(ComplexC & C)	//dodawanie do klasy bazowej
     {
 	this -> real +=C.getReal();
@@ -69,11 +69,11 @@ void ComplexC::setReal(int real)
 	cout <<"Faza:\t\t\t"<<getPhase()<<endl;
 	cout <<"-----------"<<endl;
     }
-    ComplexC ComplexC::operator*(ComplexC C)	//mnozenie
+/*    ComplexC ComplexC::operator*(ComplexC C)	//mnozenie
     {
       return ComplexC(((getReal() * C.getReal())-(getImagine() *C.getImagine())),((getReal() * C.getImagine())+(getImagine() * C.getReal())));
     }
-    ComplexC & ComplexC::operator*=(ComplexC C)	//mnozenie od klasy bazowej
+ */   ComplexC & ComplexC::operator*=(ComplexC C)	//mnozenie od klasy bazowej
     {
       double a = getReal();
       double b = getImagine();
@@ -81,13 +81,13 @@ void ComplexC::setReal(int real)
       this -> imagine = (a * C.getImagine())+(b * C.getReal());
       return *this;
     }
-    ComplexC ComplexC::operator/(ComplexC & C) //dzielenie
+/*    ComplexC ComplexC::operator/(ComplexC & C) //dzielenie
     {
       double d = pow(C.getImagine(),2) + pow(C.getReal(),2);
       double a = ((getReal()* C.getReal())+(getImagine() * C.getImagine()))/d;
       double b = ((getImagine() * C.getReal())-(getReal() * C.getImagine()))/d;
       return ComplexC(a,b);
-    }
+    }*/
     ComplexC & ComplexC::operator/=(ComplexC & C)	//dzielenie do klasy bazowej
     {
       double d = pow(C.getImagine(),2) + pow(C.getReal(),2);
@@ -97,3 +97,27 @@ void ComplexC::setReal(int real)
       this->imagine = ((b * C.getReal())-(a * C.getImagine()))/d;
       return *this;
     }
+    
+ostream & operator<<(ostream &s, ComplexC & C)	//ostream do couta
+{
+    return s<<C.getReal()<<"+"<<C.getImagine()<<"i";
+}
+ComplexC operator*(const ComplexC & A,const ComplexC & C)
+{
+  return ComplexC(((A.getReal() * C.getReal())-(A.getImagine() *C.getImagine())),((A.getReal() * C.getImagine())+(A.getImagine() * C.getReal())));
+}
+ComplexC operator+(ComplexC a, ComplexC C)
+{
+    return ComplexC(a.getReal()+C.getReal(),a.getImagine()+C.getImagine());
+}
+ComplexC operator-(ComplexC A,ComplexC c)	//odejmowanie
+  {
+    return ComplexC((A.getReal() - c.getReal()),(A.getImagine() - c.getImagine()));
+  }
+ComplexC operator/(ComplexC A, ComplexC C) //dzielenie
+{
+  double d = pow(C.getImagine(),2) + pow(C.getReal(),2);
+  double a = ((A.getReal()* C.getReal())+(A.getImagine() * C.getImagine()))/d;
+  double b = ((A.getImagine() * C.getReal())-(A.getReal() * C.getImagine()))/d;
+  return ComplexC(a,b);
+}
