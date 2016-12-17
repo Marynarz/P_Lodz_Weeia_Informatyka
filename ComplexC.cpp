@@ -25,11 +25,11 @@ void ComplexC::setReal(int real)
   {
     return imagine;
   }
-  double ComplexC::getMod()	//pobieranie modulu
+  double ComplexC::getMod() const	//pobieranie modulu
   {
     return sqrt(pow(getReal(),2)+pow(getImagine(),2));
   }
-  double ComplexC::getPhase()	//pobieranie fazy
+  double ComplexC::getPhase() const	//pobieranie fazy
   {
     if(getReal()>=0)
       return ((atan(getImagine()/getReal()) * 180)/3.14);
