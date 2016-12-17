@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Asocjacja.hpp"
 
 using namespace std;
 
