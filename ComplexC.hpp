@@ -21,22 +21,18 @@ public:
   double getImagine() const;
   double getMod();
   double getPhase();
-  bool operator==(ComplexC c);
-  //ComplexC operator+(ComplexC & c);
-  //ComplexC operator-(ComplexC & c);
-  ComplexC & operator+=(ComplexC & C);
-  ComplexC & operator-=(ComplexC & C);
+  bool operator==(const ComplexC & c);
+  ComplexC & operator+=(const ComplexC & C);
+  ComplexC & operator-=(const ComplexC & C);
   void showParams();
-  //ComplexC operator*(ComplexC C);
-  ComplexC & operator*=(ComplexC C);
-  //ComplexC operator/(ComplexC & C);
-  ComplexC & operator/=(ComplexC & C);
+  ComplexC & operator*=(const ComplexC & C);
+  ComplexC & operator/=(const ComplexC & C);
   friend ostream & operator<<(ostream &s, const ComplexC &C);
 };
 
 ostream & operator<<(ostream &s,const ComplexC & C);	//ostream do couta
 ComplexC operator*(const ComplexC & A, const ComplexC & C);
-ComplexC operator+(ComplexC a, ComplexC C);
-ComplexC operator-(ComplexC A,ComplexC c);	//odejmowanie
-ComplexC operator/(ComplexC A, ComplexC C); //dzielenie
+ComplexC operator+(const ComplexC & a, const ComplexC & C);
+ComplexC operator-(const ComplexC & A, const ComplexC & c);	//odejmowanie
+ComplexC operator/(const ComplexC & A, const ComplexC & C); //dzielenie
 #endif

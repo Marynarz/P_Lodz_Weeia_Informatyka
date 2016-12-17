@@ -37,27 +37,19 @@ void ComplexC::setReal(int real)
     return (((atan(getImagine()/getReal())+3.14) *180)/3.14);
   }
   
-  bool ComplexC::operator==(ComplexC c)	//operotor porownania
+  bool ComplexC::operator==(const ComplexC & c)	//operotor porownania
   {
     if((this -> real == c.getReal())&& (this->imagine == c.getImagine()))
       return true;
     return false;
   }
-  /*ComplexC ComplexC::operator+(ComplexC & c)	//dodawanie
-  {
-    return ComplexC((getReal() + c.getReal()),(getImagine() + c.getImagine()));
-  }*/
-  /*ComplexC ComplexC::operator-(ComplexC & c)	//odejmowanie
-  {
-    return ComplexC((getReal() - c.getReal()),(getImagine() - c.getImagine()));
-  }*/
-    ComplexC & ComplexC::operator+=(ComplexC & C)	//dodawanie do klasy bazowej
+    ComplexC & ComplexC::operator+=(const ComplexC & C)	//dodawanie do klasy bazowej
     {
 	this -> real +=C.getReal();
 	this -> imagine += C.getImagine();
 	return *this;
     }
-    ComplexC & ComplexC::operator-=(ComplexC & C)	//udejmowanie od klasy bazowej
+    ComplexC & ComplexC::operator-=(const ComplexC & C)	//udejmowanie od klasy bazowej
     {
 	this -> real -= C.getReal();
 	this -> imagine -= C.getImagine();
@@ -72,11 +64,7 @@ void ComplexC::setReal(int real)
 	cout <<"Faza:\t\t\t"<<getPhase()<<endl;
 	cout <<"-----------"<<endl;
     }
-/*    ComplexC ComplexC::operator*(ComplexC C)	//mnozenie
-    {
-      return ComplexC(((getReal() * C.getReal())-(getImagine() *C.getImagine())),((getReal() * C.getImagine())+(getImagine() * C.getReal())));
-    }
- */   ComplexC & ComplexC::operator*=(ComplexC C)	//mnozenie od klasy bazowej
+   ComplexC & ComplexC::operator*=(const ComplexC & C)	//mnozenie od klasy bazowej
     {
       double a = getReal();
       double b = getImagine();
@@ -84,14 +72,8 @@ void ComplexC::setReal(int real)
       this -> imagine = (a * C.getImagine())+(b * C.getReal());
       return *this;
     }
-/*    ComplexC ComplexC::operator/(ComplexC & C) //dzielenie
-    {
-      double d = pow(C.getImagine(),2) + pow(C.getReal(),2);
-      double a = ((getReal()* C.getReal())+(getImagine() * C.getImagine()))/d;
-      double b = ((getImagine() * C.getReal())-(getReal() * C.getImagine()))/d;
-      return ComplexC(a,b);
-    }*/
-    ComplexC & ComplexC::operator/=(ComplexC & C)	//dzielenie do klasy bazowej
+
+    ComplexC & ComplexC::operator/=(const ComplexC & C)	//dzielenie do klasy bazowej
     {
       double d = pow(C.getImagine(),2) + pow(C.getReal(),2);
       double a = getReal();
@@ -109,15 +91,15 @@ ComplexC operator*(const ComplexC & A,const ComplexC & C)
 {
   return ComplexC(((A.getReal() * C.getReal())-(A.getImagine() *C.getImagine())),((A.getReal() * C.getImagine())+(A.getImagine() * C.getReal())));
 }
-ComplexC operator+(ComplexC a, ComplexC C)
+ComplexC operator+(const ComplexC & a, const ComplexC & C)
 {
     return ComplexC(a.getReal()+C.getReal(),a.getImagine()+C.getImagine());
 }
-ComplexC operator-(ComplexC A,ComplexC c)	//odejmowanie
+ComplexC operator-(const ComplexC & A,const ComplexC & c)	//odejmowanie
   {
     return ComplexC((A.getReal() - c.getReal()),(A.getImagine() - c.getImagine()));
   }
-ComplexC operator/(ComplexC A, ComplexC C) //dzielenie
+ComplexC operator/(const ComplexC & A,const ComplexC & C) //dzielenie
 {
   double d = pow(C.getImagine(),2) + pow(C.getReal(),2);
   double a = ((A.getReal()* C.getReal())+(A.getImagine() * C.getImagine()))/d;
