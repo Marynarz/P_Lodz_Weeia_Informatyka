@@ -17,8 +17,8 @@ private:
   void setReal(int real);
   void setImagine(int imagine);
 public:
-  double getReal();
-  double getImagine();
+  double getReal() const;
+  double getImagine() const;
   double getMod();
   double getPhase();
   bool operator==(ComplexC c);
@@ -32,10 +32,9 @@ public:
   //ComplexC operator/(ComplexC & C);
   ComplexC & operator/=(ComplexC & C);
   friend ostream & operator<<(ostream &s, const ComplexC &C);
-  friend int operator*(int a, ComplexC C);
 };
 
-ostream & operator<<(ostream &s, ComplexC & C);	//ostream do couta
+ostream & operator<<(ostream &s,const ComplexC & C);	//ostream do couta
 ComplexC operator*(const ComplexC & A, const ComplexC & C);
 ComplexC operator+(ComplexC a, ComplexC C);
 ComplexC operator-(ComplexC A,ComplexC c);	//odejmowanie

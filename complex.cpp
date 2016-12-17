@@ -8,16 +8,21 @@ using namespace std;
 
 int main()
 {
-    ComplexC a(1,1);
-    ComplexC b(2,1);
-
+    ComplexC a(1,2);
+    ComplexC b(1,-2);
+    
+    cout <<(a+b)<<endl;
+    cout <<(a-b)<<endl;
+    cout <<(a*b)<<endl;
+    cout <<(a/b)<<endl;
+    cout <<a.getPhase()<<endl<<a.getMod()<<endl;
     cout <<"++++COMPLEX++++"<<endl;
     cout<<a<<endl;
     a.showParams();
     cout<<b<<endl;
     b.showParams();
     cout <<"++++++++++++++"<<endl;
-
+    
         cout <<a<<endl<<b<<endl;
     cout <<"-----DODAWANIE-----"<<endl;
     cout <<"c=a+b:\t";
@@ -25,6 +30,7 @@ int main()
     cout <<c<<endl;
     cout <<"a+=b+=c:\t";
     a+=b+=c;
+    ComplexC D(5);
     cout <<a<<endl<<endl;
 
         cout <<a<<endl<<b<<endl<<c<<endl;

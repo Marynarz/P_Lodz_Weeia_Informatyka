@@ -17,11 +17,11 @@ void ComplexC::setReal(int real)
   {
     this -> imagine = imagine;
   }
-  double ComplexC::getReal()	//pobieranie czesci rzeczywistej
+  double ComplexC::getReal() const	//pobieranie czesci rzeczywistej
   {
     return real;
   }
-  double ComplexC::getImagine()	//pobieranie czesci urojonej
+  double ComplexC::getImagine() const	//pobieranie czesci urojonej
   {
     return imagine;
   }
@@ -31,7 +31,10 @@ void ComplexC::setReal(int real)
   }
   double ComplexC::getPhase()	//pobieranie fazy
   {
-    return (atan(getReal()/getImagine()) *( 180/3.14));
+    if(getReal()>=0)
+      return ((atan(getImagine()/getReal()) * 180)/3.14);
+    
+    return (((atan(getImagine()/getReal())+3.14) *180)/3.14);
   }
   
   bool ComplexC::operator==(ComplexC c)	//operotor porownania
@@ -98,7 +101,7 @@ void ComplexC::setReal(int real)
       return *this;
     }
     
-ostream & operator<<(ostream &s, ComplexC & C)	//ostream do couta
+ostream & operator<<(ostream &s,const  ComplexC & C)	//ostream do couta
 {
     return s<<C.getReal()<<"+"<<C.getImagine()<<"i";
 }
