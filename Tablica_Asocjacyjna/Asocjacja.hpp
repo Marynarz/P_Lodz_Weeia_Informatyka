@@ -2,6 +2,7 @@
 #define Asocjacja_hpp
 
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
@@ -15,7 +16,7 @@ private:
   };
   list *head;
 public:
-  Asocjacja();
+  Asocjacja(char *key);
   Asocjacja(const Asocjacja &prev);
   ~Asocjacja();
   void insert(const char* key, double value);
