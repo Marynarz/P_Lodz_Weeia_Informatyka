@@ -17,6 +17,7 @@ Asocjacja::Asocjacja(const Asocjacja & prev)
 
     head->value=prev.head->value;
 
+<<<<<<< HEAD
 }
 Asocjacja::~Asocjacja()
 {
@@ -44,4 +45,6 @@ void Asocjacja::clear()
         delete head;
         head = t;
     }
+=======
+>>>>>>> da572294ab0f1d47dc0945b6448305c2a3f2f618
 }
