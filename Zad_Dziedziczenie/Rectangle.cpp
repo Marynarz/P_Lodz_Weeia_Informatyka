@@ -1,8 +1,4 @@
 #include "Rectangle.hpp"
 
-Rectangle::Rectangle(double a, double b):a(a),b(b),Parallelogram(a,b,0)
+Rectangle::Rectangle(double a, double b):Parallelogram(a,b,90)
 {}
-double Rectangle::area()
-{
-  return a*b;
-}
