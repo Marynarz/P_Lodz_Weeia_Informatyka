@@ -1,7 +1,7 @@
 #include "Circle.hpp"
 #define PIi 3.14
 
-Circle::Circle(const double rad):radius(rad)
+Circle::Circle(double rad):radius(rad)
 {}
 double Circle::area()
 {
