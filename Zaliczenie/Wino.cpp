@@ -1,5 +1,5 @@
 #include "Wino.hpp"
-  Wino::Wino(const char* marka,const char* styl,const int butelki):marka(marka),styl(styl),butelki(butelki)
+  Wino::Wino(const char* marka,const char* styl,const unsigned int butelki):marka(marka),styl(styl),butelki(butelki)
   {}
   Wino::Wino(const Wino &W):marka(W.getMarka()),styl(W.getStyle()),butelki(W.IleButelek())
   {}
@@ -20,12 +20,12 @@
     this->butelki = W.IleButelek();
     return *this;
   }
-  Wino & Wino::operator+=(const int Butle)
+  Wino & Wino::operator+=(const unsigned int Butle)
   {
     this->butelki +=Butle;
     return *this;
   }
-  Wino & Wino::operator-=(const int Butle)
+  Wino & Wino::operator-=(const unsigned int Butle)
   {
     if (Butle > butelki)
       this -> butelki = 0;
@@ -33,7 +33,7 @@
       this -> butelki -=Butle;
     return *this;
   }
-  int Wino::IleButelek() const
+  unsigned int Wino::IleButelek() const
   {
     return butelki;
   }
