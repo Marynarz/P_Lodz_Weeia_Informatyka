@@ -1,6 +1,5 @@
 #ifndef Wino_hpp
 #define Wino_hpp
-
 #include <iostream>
 
 using namespace std;
@@ -8,20 +7,22 @@ using namespace std;
 class Wino
 {
 private:
-  char* marka;
-  char* styl;
+  string marka;
+  string styl;
   int butelki;
   
 public:
-  Wino(const char* marka = "brak", const char*styl = "brak", int butelki = 0);
+  Wino(string marka = "brak", string styl = "brak", int butelki = 0);
   ~Wino();
+  string getMarka() const;
+  string getStyle() const;
+  int getButelki() const;
   Wino & operator=(const Wino &W);
-  Wino & operator+=(const int Butle);
-  Wino & operator-=(const int Butle);
+  Wino & operator+=(const Wino &W);
+  Wino & operator-=(const Wino &W);
   int IleButelek();
   void Pokaz();
   friend ostream & operator<<(ostream & s, const Wino &W);
 };
 
-ostream & operator<<(ostream & s, const Wino &W);
 #endif
