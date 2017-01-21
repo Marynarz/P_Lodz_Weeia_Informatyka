@@ -22,11 +22,11 @@
     this->butelki = W.getButelki();
     return *this;
   }
-  Wino & operator+=(const Wino &W)
+  Wino & Wino::operator+=(const Wino &W)
   {
     return Wino *A(marka,styl,butelki+W.getButelki());
   }
-  Wino & operator-=(const Wino &W)
+  Wino & Wino::operator-=(const Wino &W)
   {
     if (W.getButelki() > A.getButelki())
       return Wino *A(marka,styl,0);
@@ -45,3 +45,8 @@ ostream & operator<<(ostream & s, const Wino &W)
 {
   return s<<W.marka<<","<<W.styl<<","<<W.butelki;
 }
+
+/*Wino & operator+=(const int Butle)
+{
+  return 
+}*/
