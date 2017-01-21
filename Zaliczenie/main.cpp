@@ -1,20 +1,28 @@
 #include <iostream>
 #include "Starewino.hpp"
-#include "Wino.hpp"
+
 
 using namespace std;
 
 int main()
 {
-  Wino w("Merlot","czerwone",20);
-  w.Pokaz();
-  cout <<w.IleButelek()<<endl;
-  w+=20;
-  cout <<w<<endl;
-  Starewino Sw("Marlot","biale",13,"Chateau",1450);
-  Sw.Pokaz();
-  cout <<Sw.IleButelek()<<endl;
-  Sw+=23;
-  cout <<Sw<<endl;
+  Wino W("Merlot","czerwone",14);
+  
+    W.Pokaz();
+    W+=5;
+    cout <<W<<endl;
+    W-=20;
+    cout <<W.IleButelek()<<endl<<endl<<endl;
+    
+    Starewino Sw("Merlot","czerwone",23,"Szato",1967);
+    Sw.Pokaz();
+    Sw -=30;
+    cout <<Sw<<endl;
+    Sw += 4;
+    cout <<Sw<<endl;
+    
+    Starewino Sw2("Merlot","biale",23,"Szato",1967);
+    Sw = Sw2;
+    Sw.Pokaz();
   return 0;
 }
