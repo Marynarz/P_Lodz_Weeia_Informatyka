@@ -16,11 +16,10 @@ public:
   ~Wino();
   string getMarka() const;
   string getStyle() const;
-  int getButelki() const;
   Wino & operator=(const Wino &W);
-  Wino & operator+=(const Wino &W);
-  Wino & operator-=(const Wino &W);
-  int IleButelek();
+  Wino & operator+=(const int Butle);
+  Wino & operator-=(const int Butle);
+  int IleButelek() const;
   void Pokaz();
   friend ostream & operator<<(ostream & s, const Wino &W);
 };

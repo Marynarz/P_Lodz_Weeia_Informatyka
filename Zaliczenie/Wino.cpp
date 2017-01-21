@@ -11,35 +11,33 @@
   {
     return styl;
   }
-  int Wino::getButelki() const
-  {
-    return butelki;
-  }
   Wino & Wino::operator=(const Wino &W)
   {
     this->marka = W.getMarka();
     this->styl = W.getStyle();
-    this->butelki = W.getButelki();
+    this->butelki = W.IleButelek();
     return *this;
   }
-  Wino & Wino::operator+=(const Wino &W)
+  Wino & Wino::operator+=(const int Butle)
   {
-    return Wino *A(marka,styl,butelki+W.getButelki());
+    this->butelki +=Butle;
+    return *this;
   }
-  Wino & Wino::operator-=(const Wino &W)
+  Wino & Wino::operator-=(const int Butle)
   {
-    if (W.getButelki() > A.getButelki())
-      return Wino *A(marka,styl,0);
+    if (Butle > butelki)
+      this -> butelki = 0;
     else
-      return Wino *A(marka,styl,butelki - W.getButelki());
+      this -> butelki -=Butle;
+    return *this;
   }
-  int IleButelek()
+  int Wino::IleButelek() const
   {
     return butelki;
   }
-  void Pokaz()
+  void Wino::Pokaz()
   {
-    cout <<"Marka:\t"<<marka<<endl<<"Styl:\t"<<styl<<endl<<"Butelki\t"<butelki<<endl;
+    cout <<"Marka:\t"<<marka<<endl<<"Styl:\t"<<styl<<endl<<"Butelki:\t"<<butelki<<endl;
   }
 ostream & operator<<(ostream & s, const Wino &W)
 {
