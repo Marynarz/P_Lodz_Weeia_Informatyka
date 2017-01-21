@@ -1,6 +1,7 @@
 #ifndef Starewino_hpp
 #define Starewino_hpp
 #include <iostream>
+#include "Wino.hpp"
 
 using namespace std;
 
@@ -12,13 +13,12 @@ private:
   
 public:
   Starewino();									//konstruktor pusty
-  Starewino(const Wino &W);							//konstruktor kopiujacy
-  ~StareWino();								//destruktor
-  const char* getMarka()const;
-  const char* getStyle()const;
+  Starewino(const char* marka, const char* styl,const unsigned int butelki,const char* nazwa,unsigned int rok);
+  Starewino(const Starewino &W);							//konstruktor kopiujacy
+  ~Starewino();								//destruktor
   const char* getNazwa()const;
   unsigned int getRok()const;
-  virtual Wino & operator=(const Starewino &W);
+  Starewino & operator=(const Starewino &W);
   virtual void Pokaz();
   friend ostream & operator<<(ostream & s, const Starewino &W);
 };

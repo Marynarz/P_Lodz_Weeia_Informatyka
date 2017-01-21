@@ -41,6 +41,18 @@
   {
     cout <<"Marka:\t\t"<<marka<<endl<<"Styl:\t\t"<<styl<<endl<<"Butelki:\t"<<butelki<<endl;
   }
+  void Wino::setMarka(const char* marka)
+  {
+    this->marka = marka;
+  }
+  void Wino::setStyle(const char* style)
+  {
+    this->styl = style;
+  }
+  void Wino::setButle(const unsigned int butle)
+  {
+    this -> butelki = butle;
+  }
 ostream & operator<<(ostream & s, const Wino &W)
 {
   return s<<W.marka<<","<<W.styl<<","<<W.butelki;

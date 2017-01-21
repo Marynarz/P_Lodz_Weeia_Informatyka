@@ -17,11 +17,14 @@ public:
   ~Wino();								//destruktor
   const char* getMarka()const;
   const char* getStyle()const;
-  virtual Wino & operator=(const Wino &W);
+  Wino & operator=(const Wino &W);
   Wino & operator+=(const unsigned int Butle);
   Wino & operator-=(const unsigned int Butle);
   unsigned int IleButelek() const;
   virtual void Pokaz();
+  void setMarka(const char* marka);
+  void setStyle(const char* style);
+  void setButle(const unsigned int butle);
   friend ostream & operator<<(ostream & s, const Wino &W);
 };
 
