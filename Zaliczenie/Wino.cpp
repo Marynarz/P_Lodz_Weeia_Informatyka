@@ -1,13 +1,15 @@
 #include "Wino.hpp"
-  Wino::Wino(string marka,string styl, int butelki):marka(marka),styl(styl),butelki(butelki)
+  Wino::Wino(const char* marka,const char* styl,const int butelki):marka(marka),styl(styl),butelki(butelki)
+  {}
+  Wino::Wino(const Wino &W):marka(W.getMarka()),styl(W.getStyle()),butelki(W.IleButelek())
   {}
   Wino::~Wino()
   {}
-  string Wino::getMarka() const
+  const char* Wino::getMarka()const
   {
     return marka;
   }
-  string Wino::getStyle() const
+  const char* Wino::getStyle()const
   {
     return styl;
   }
@@ -37,14 +39,9 @@
   }
   void Wino::Pokaz()
   {
-    cout <<"Marka:\t"<<marka<<endl<<"Styl:\t"<<styl<<endl<<"Butelki:\t"<<butelki<<endl;
+    cout <<"Marka:\t\t"<<marka<<endl<<"Styl:\t\t"<<styl<<endl<<"Butelki:\t"<<butelki<<endl;
   }
 ostream & operator<<(ostream & s, const Wino &W)
 {
   return s<<W.marka<<","<<W.styl<<","<<W.butelki;
 }
-
-/*Wino & operator+=(const int Butle)
-{
-  return 
-}*/
