@@ -8,12 +8,12 @@ using namespace std;
 class Klawisz
 {
 	private:
-	const int numer;
+	int numer;
 	
 	public:
 	Klawisz(const int numer = -1);
 	void Nacisnij();
-	void UstawNumer(const int wartosc);
+	void UstawNumer(int wartosc);
 	int OdczytajNumer();
 };
 

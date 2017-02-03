@@ -5,7 +5,7 @@ void Klawisz::Nacisnij()
 {
 	cout <<numer;
 }
-void Klawisz::UstawNumer(const int num)
+void Klawisz::UstawNumer(int num)
 {
 	numer = num;
 }
