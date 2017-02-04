@@ -3,7 +3,7 @@ Klawisz::Klawisz(const int numer):numer(numer)
 {}
 void Klawisz::Nacisnij()
 {
-	cout <<numer;
+	cout <<numer<<endl;
 }
 void Klawisz::UstawNumer(int num)
 {
