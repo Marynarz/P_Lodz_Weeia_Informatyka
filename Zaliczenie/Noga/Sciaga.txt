@@ -1,0 +1,23 @@
+Git poradnik dla opornych:
+
+Git jest natywnie wbudowany w linuxa, więc jeśli chcesz sklonowac repo na linuxie to masz luz, a jeśli na windowsie to musisz pobrać gita!
+
+W celu pobrania repo gita:
+    git clone https://github.com/Marynarz/P_Lodz_Weeia_Informatyka.git
+
+Dodanie nowej branchy:
+    git branch <nazwa_nowej_branchy>
+    git checkout <nazwa_nowej_branchy>
+
+Wczytanie zmian z serwera:
+    git pull --rebase
+
+Dodawanie nowych plikow do repo:
+    git add .
+
+Commitowanie zmian:
+    git commit -a -m "Twoj komentarz"
+
+Wrzucanie zmian na serwer:
+    git push origin master
+    git push origin <nazwa_nowej_branchy>       <--Wybrac jezeli nie jestes na glownym repo tylko branchy
