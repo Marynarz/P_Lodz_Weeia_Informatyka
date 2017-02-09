@@ -8,10 +8,11 @@ using namespace std;
 class Stol
 {
     Noga * no;
+    unsigned const int iloscNog;
 public:
     Stol(unsigned const int iloscNog);
     ~Stol();
-    void CzyStoiRowno();
+    bool CzyStoiRowno();
     void UstawDlugoscNogi(unsigned const int ktoraNoga, unsigned const int dlugoscNogi);
 };
  
