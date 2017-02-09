@@ -1,3 +1,4 @@
+/* GitHUB: MARYNARZ REPO: P_LODZ_WEEIA_INFORMATYKA */
 #ifndef Klawisz_hpp
 #define Klawisz_hpp
 
@@ -11,7 +12,7 @@ class Klawisz
 	int numer;
 	
 	public:
-	Klawisz(const int numer = -1);
+	Klawisz(int numer = -1);
 	void Nacisnij();
 	void UstawNumer(int wartosc);
 	int OdczytajNumer();

@@ -1,3 +1,4 @@
+/* GitHUB: MARYNARZ REPO: P_LODZ_WEEIA_INFORMATYKA */
 #ifndef Klawiatura_hpp
 #define Klawiatura_hpp
 
@@ -9,7 +10,7 @@ using namespace std;
 class Klawiatura
 {
 	private:
-	Klawisz *Kla[101];
+	Klawisz *kla;
 	
 	public:
 	Klawiatura();
