@@ -12,7 +12,7 @@ int main()
     
     Stol s1(3);
     s1.UstawDlugoscNogi(1,6);
-    s1.UstawDlugoscNogi(2,6);
+    s1.UstawDlugoscNogi(6,6);
     s1.UstawDlugoscNogi(3,6);
     cout <<s1.CzyStoiRowno()<<endl;
     s1.UstawDlugoscNogi(1,5);

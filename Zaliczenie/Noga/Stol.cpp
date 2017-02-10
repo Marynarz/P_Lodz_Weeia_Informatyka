@@ -23,6 +23,17 @@ bool Stol::CzyStoiRowno()
 }
 void Stol::UstawDlugoscNogi(unsigned const int ktoraNoga, unsigned const int dlugoscNogi)
 {
-    no[ktoraNoga-1].UstawDlugosc(dlugoscNogi);
+    try
+    {
+        const char * wyjatek = "BladNog";
+        if(ktoraNoga>iloscNog || ktoraNoga<1)
+            throw wyjatek;
+    
+        no[ktoraNoga-1].UstawDlugosc(dlugoscNogi);
+    }
+    catch(const char * wyj)
+    {
+        cout <<"Exception: "<<wyj<<endl;
+    }
 }
 
