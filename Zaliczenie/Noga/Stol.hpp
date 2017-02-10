@@ -12,7 +12,7 @@ class Stol
 public:
     Stol(unsigned const int iloscNog);
     ~Stol();
-    bool CzyStoiRowno();
+    void CzyStoiRowno();
     void UstawDlugoscNogi(unsigned const int ktoraNoga, unsigned const int dlugoscNogi);
 };
  

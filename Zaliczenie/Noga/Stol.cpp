@@ -9,17 +9,19 @@ Stol::~Stol()
 {
     delete [] no;
 }
-bool Stol::CzyStoiRowno()
+void Stol::CzyStoiRowno()
 {
+    bool czyRowne=true;
     for(int i=0;i<iloscNog-1;i++)
     {
         if(no[i].OdczytajDlugosc()!=no[i+1].OdczytajDlugosc())
-        {
-            return false;
-        }
-        
+            czyRowne=false;
     }
-    return true;
+    
+    if(czyRowne)
+        cout <<"Stoi Prosto!"<<endl;
+    else
+        cout <<"Stoi Krzywo!"<<endl;
 }
 void Stol::UstawDlugoscNogi(unsigned const int ktoraNoga, unsigned const int dlugoscNogi)
 {
@@ -33,7 +35,7 @@ void Stol::UstawDlugoscNogi(unsigned const int ktoraNoga, unsigned const int dlu
     }
     catch(const char * wyj)
     {
-        cout <<"Exception: "<<wyj<<endl;
+        cout <<"Exception: "<<wyj<<": Podana noga: "<<ktoraNoga<<"; Zakres dopuszczalny: 1-"<<iloscNog<<endl;
     }
 }
 
