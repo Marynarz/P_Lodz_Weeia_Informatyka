@@ -9,14 +9,14 @@ using namespace std;
 
 class Klawiatura
 {
-	private:
 	Klawisz *kla;
 	
 	public:
 	Klawiatura();
-	//Klawiatura(const Klawiatura &K);
+	Klawiatura(const Klawiatura &K);
 	~Klawiatura();
 	void NacisnijKlawisz(int numer);
+    Klawiatura & operator=(const Klawiatura K);
 };
 
 
