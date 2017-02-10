@@ -12,6 +12,8 @@ int main()
     
     Klawisz klawi(2);
     klawi.Nacisnij();
+    Klawiatura kla1 = kla;
+    kla1.NacisnijKlawisz(3);
     return 0;
 }
 

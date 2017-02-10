@@ -12,9 +12,9 @@ class Klawisz
 	int numer;
 	
 	public:
-	Klawisz(int numer = -1);
+	Klawisz(const int numer = -1);
 	void Nacisnij();
-	void UstawNumer(int wartosc);
+	void UstawNumer(const int wartosc);
 	int OdczytajNumer();
 };
 
