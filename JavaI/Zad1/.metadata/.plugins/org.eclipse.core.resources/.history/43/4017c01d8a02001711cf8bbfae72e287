@@ -1,0 +1,14 @@
+import java.util.Random;
+
+
+public class Silnik {
+	private int magicznaLiczba;
+	public Silnik()
+	{
+		Random gene = new Random();
+		gene.nextInt(this.magicznaLiczba);
+		
+		System.out.println("Magiczna liczba: "+magicznaLiczba);
+	}
+
+}
