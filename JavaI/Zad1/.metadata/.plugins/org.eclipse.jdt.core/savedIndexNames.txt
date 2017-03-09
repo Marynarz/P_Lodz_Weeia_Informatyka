@@ -11,5 +11,5 @@ INDEX VERSION 1.126+/home/wojtek/P_Lodz_Weeia_Informatyka/JavaI/Zad1/.metadata/.
 2259717368.index
 989528713.index
 3542660237.index
-3938652823.index
 2598035366.index
+3938652823.index

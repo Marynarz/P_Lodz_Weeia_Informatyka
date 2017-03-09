@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="24" version="2.0">
 <workbenchAdvisor/>
 <window height="766" maximized="true" width="1022" x="683" y="160">
 <fastViewData fastViewLocation="1024"/>
-<intro standby="true"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
@@ -36,13 +35,13 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Zad1.java" partName="Zad1.java" path="/home/wojtek/P_Lodz_Weeia_Informatyka/JavaI/Zad1/zad1/src/Silnik/Zad1.java" title="Zad1.java" tooltip="zad1/src/Silnik/Zad1.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/zad1/src/Silnik/Zad1.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="140" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Zad1.java" partName="Zad1.java" path="/home/wojtek/P_Lodz_Weeia_Informatyka/JavaI/Zad1/zad1/src/Zad1/Zad1.java" title="Zad1.java" tooltip="zad1/src/Zad1/Zad1.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/zad1/src/Zad1/Zad1.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="179" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Silnik.java" partName="Silnik.java" path="/home/wojtek/P_Lodz_Weeia_Informatyka/JavaI/Zad1/zad1/src/Silnik/Silnik.java" title="Silnik.java" tooltip="zad1/src/Silnik/Silnik.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/zad1/src/Silnik/Silnik.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="184" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Silnik.java" partName="Silnik.java" path="/home/wojtek/P_Lodz_Weeia_Informatyka/JavaI/Zad1/zad1/src/Zad1/Silnik.java" title="Silnik.java" tooltip="zad1/src/Zad1/Silnik.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/zad1/src/Zad1/Silnik.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="478" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -52,7 +51,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="695" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -92,12 +92,6 @@
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
 </xmlDefinedFilters>
 </customFilters>
-</viewState>
-</view>
-<view id="org.eclipse.ui.internal.introview" partName="Welcome">
-<viewState>
-<presentation currentPage="root" restore="true"/>
-<standbyPart/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -245,7 +239,6 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -262,13 +255,11 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@7d8f1132" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">
-<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
-<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
@@ -306,149 +297,158 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/zad1/src/Silniczatko.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/zad1/src/Zad1.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/zad1/src/Silnik.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/zad1/src/Silnik/Silnik.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/zad1/src/Silnik/Zad1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/zad1/src/Zad1/Zad1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/zad1/src/Zad1/Silnik.java"/>
 </editors>
-<item historyLabel="Silniczatko.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="749" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="113" y="0"/>
-</item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="26" y="0"/>
-</item>
-<item historyLabel="Silnik.java" index="2">
+<item historyLabel="Silnik.java" index="1">
 <position/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="231" y="0"/>
-</item>
-<item historyLabel="Silnik.java" index="2">
+<item historyLabel="Silnik.java" index="1">
 <position/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="93" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="688" y="0"/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="223" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="520" y="0"/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="225" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="488" y="9"/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="228" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="135" y="4"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="167" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="232" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="113" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="748" y="0"/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="232" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="391" y="8"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="19" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="749" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="113" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="540" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="109" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="391" y="8"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="108" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="688" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="110" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="481" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="121" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="170" y="0"/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="232" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="121" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="170" y="0"/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="232" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="19" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="170" y="0"/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="25" y="8"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="170" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="19" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="25" y="8"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="170" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="19" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="Silnik.java" index="2">
-<position info="not_deleted" x="232" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="19" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="7" y="4"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="121" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="191" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="1">
-<position info="not_deleted" x="7" y="4"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Silnik.java" index="3">
-<position info="not_deleted" x="238" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="183" y="0"/>
 </item>
-<item historyLabel="Silnik.java" index="3">
-<position info="not_deleted" x="252" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Zad1.java" index="4">
-<position info="not_deleted" x="7" y="11"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="183" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="4">
-<position info="not_deleted" x="30" y="6"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Zad1.java" index="4">
-<position info="not_deleted" x="140" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="4">
-<position info="not_deleted" x="30" y="6"/>
+<item historyLabel="Silnik.java" index="1">
+<position/>
 </item>
-<item historyLabel="Zad1.java" index="4">
-<position info="not_deleted" x="79" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="4">
-<position info="not_deleted" x="133" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="191" y="0"/>
 </item>
-<item historyLabel="Silnik.java" index="3">
-<position info="not_deleted" x="184" y="0"/>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="191" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="4">
-<position info="not_deleted" x="133" y="0"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="709" y="0"/>
 </item>
-<item historyLabel="Zad1.java" index="4">
-<position info="not_deleted" x="80" y="4"/>
+<item historyLabel="Zad1.java" index="0">
+<position/>
 </item>
-<item active="true" historyLabel="Zad1.java" index="4">
-<position info="not_deleted" x="111" y="2"/>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="705" y="11"/>
+</item>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="187" y="0"/>
+</item>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="170" y="0"/>
+</item>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="191" y="0"/>
+</item>
+<item historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="171" y="0"/>
+</item>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="705" y="11"/>
+</item>
+<item historyLabel="Silnik.java" index="1">
+<position info="not_deleted" x="478" y="0"/>
+</item>
+<item active="true" historyLabel="Zad1.java" index="0">
+<position info="not_deleted" x="171" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
