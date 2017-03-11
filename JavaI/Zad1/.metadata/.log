@@ -1,0 +1,16 @@
+!SESSION 2017-03-11 09:04:11.526 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pl_PL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/Wojtek/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/Wojtek/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 1 1 2017-03-11 09:06:00.828
+!MESSAGE Workbench migration started
+
+!ENTRY org.eclipse.ui 1 1 2017-03-11 09:06:04.008
+!MESSAGE Workbench migration finished
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-03-11 09:06:16.602
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See '/Users/Wojtek/eclipse/java-neon/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
