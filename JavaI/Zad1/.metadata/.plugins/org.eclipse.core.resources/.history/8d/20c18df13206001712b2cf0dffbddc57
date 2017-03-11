@@ -6,12 +6,10 @@ import java.util.Scanner;
 public class Silnik {
 	private int magicznaLiczba;
 	private Scanner stdWejscie;
-	private int licznikUzycia;
 
 	public Silnik()
 	{
 		this.generatorLiczby();
-		this.licznikUzycia =0;
 		
 		System.out.println("Magiczna liczba: "+magicznaLiczba);
 	}
@@ -22,7 +20,6 @@ public class Silnik {
 	}
 	public coSieDzieje Zgaduj()
 	{
-		licznikUzycia++;
 		stdWejscie = new Scanner(System.in);
 		System.out.println("Podaj liczbe: ");
 		int odpowiedz = stdWejscie.nextInt();
@@ -38,10 +35,5 @@ public class Silnik {
 		zaMalo,
 		ok,
 		zaDuzo;
-	}
-	public void Statystyki()
-	{
-		System.out.println("Magiczna liczba bylo: "+magicznaLiczba);
-		System.out.println("Grales "+licznikUzycia+" razy");
 	}
 }

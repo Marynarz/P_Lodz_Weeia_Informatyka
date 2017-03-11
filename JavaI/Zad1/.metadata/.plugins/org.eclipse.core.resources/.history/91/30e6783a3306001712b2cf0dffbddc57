@@ -39,9 +39,4 @@ public class Silnik {
 		ok,
 		zaDuzo;
 	}
-	public void Statystyki()
-	{
-		System.out.println("Magiczna liczba bylo: "+magicznaLiczba);
-		System.out.println("Grales "+licznikUzycia+" razy");
-	}
 }
