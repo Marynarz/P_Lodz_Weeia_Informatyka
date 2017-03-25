@@ -30,19 +30,13 @@ public class Zad1 {
 						}
 					}
 					s1.Statystyki();
-					gra = true;
 					System.out.println("Jeszcze raz? T/N");
 					stdWejscie = new Scanner(System.in);
-					char odpowiedz = stdWejscie.nextLine().charAt(0);
+					int odpowiedz = stdWejscie.nextString();
 					if(odpowiedz == 'N' || odpowiedz == 'n')
 						jeszczeRaz = false;
-					else if(odpowiedz=='T' || odpowiedz =='t')
-						System.out.println("Let's play a game!");
-					else
-					{
-						System.out.println("BLAD!");
-						jeszczeRaz = false;
-					}
+					else if(odpowiedz!='T' || odpowiedz !='t')
+						System.out.println('Blad! Let\'s play a game!');
 		}
 
 		

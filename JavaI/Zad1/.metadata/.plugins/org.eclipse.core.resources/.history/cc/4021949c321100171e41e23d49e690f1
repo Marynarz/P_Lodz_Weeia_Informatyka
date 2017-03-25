@@ -40,7 +40,7 @@ public class Zad1 {
 						System.out.println("Let's play a game!");
 					else
 					{
-						System.out.println("BLAD!");
+						System.out.println('BLAD!');
 						jeszczeRaz = false;
 					}
 		}

@@ -11,6 +11,8 @@ public class Silnik {
 	public Silnik()
 	{
 		this.resetGame();
+		
+		System.out.println("Magiczna liczba: "+magicznaLiczba);
 	}
 	private void generatorLiczby()
 	{
@@ -46,6 +48,5 @@ public class Silnik {
 	{
 		this.generatorLiczby();
 		this.licznikUzycia = 0;
-		System.out.println("Magiczna liczba: "+magicznaLiczba);
 	}
 }

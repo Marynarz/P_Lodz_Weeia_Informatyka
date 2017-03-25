@@ -39,10 +39,7 @@ public class Zad1 {
 					else if(odpowiedz=='T' || odpowiedz =='t')
 						System.out.println("Let's play a game!");
 					else
-					{
-						System.out.println("BLAD!");
 						jeszczeRaz = false;
-					}
 		}
 
 		

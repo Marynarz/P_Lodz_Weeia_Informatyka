@@ -10,7 +10,10 @@ public class Silnik {
 
 	public Silnik()
 	{
-		this.resetGame();
+		this.generatorLiczby();
+		this.licznikUzycia =0;
+		
+		System.out.println("Magiczna liczba: "+magicznaLiczba);
 	}
 	private void generatorLiczby()
 	{
@@ -40,12 +43,5 @@ public class Silnik {
 	{
 		System.out.println("Magiczna liczba bylo: "+magicznaLiczba);
 		System.out.println("Grales "+licznikUzycia+" razy");
-		this.resetGame();
-	}
-	private void resetGame()
-	{
-		this.generatorLiczby();
-		this.licznikUzycia = 0;
-		System.out.println("Magiczna liczba: "+magicznaLiczba);
 	}
 }
