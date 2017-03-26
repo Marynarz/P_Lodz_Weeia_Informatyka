@@ -14,3 +14,31 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.oomph.setup.ui 1 0 2017-03-11 09:06:16.602
 !MESSAGE Setup tasks were performed during startup updating 5 preferences. See '/Users/Wojtek/eclipse/java-neon/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+!SESSION 2017-03-26 10:23:48.198 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pl_PL
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/Wojtek/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/Wojtek/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2017-03-26 10:29:23.572
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-03-26 10:29:23.572
+!MESSAGE A conflict occurred for ALT+COMMAND+B:
+Binding(ALT+COMMAND+B,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.SkipAllBreakpoints,Skip All Breakpoints,
+		Sets whether or not any breakpoint should suspend execution,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b054614,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+B,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.gotoBreadcrumb,Show In Breadcrumb,
+		Shows the Java editor breadcrumb and sets the keyboard focus into it,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7476c5c2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.breadcrumbEditorScope,,cocoa,system)

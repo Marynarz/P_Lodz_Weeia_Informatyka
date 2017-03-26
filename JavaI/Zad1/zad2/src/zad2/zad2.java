@@ -20,6 +20,7 @@ public class zad2 {
 		{
 			System.out.println("Zly zakres");
 		}
+		return;
 
 	}
 

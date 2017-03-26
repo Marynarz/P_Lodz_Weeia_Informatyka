@@ -8,6 +8,6 @@
 </listAttribute>
 <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="zad2.zad2"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="HelloWorld -1 6"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="HelloWorld 6 4"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="zad2"/>
 </launchConfiguration>

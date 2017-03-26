@@ -33,6 +33,7 @@ public class Zad1 {
 					gra = true;
 					System.out.println("Jeszcze raz? T/N");
 					stdWejscie = new Scanner(System.in);
+					stdWejscie.close();
 					char odpowiedz = stdWejscie.nextLine().charAt(0);
 					if(odpowiedz == 'N' || odpowiedz == 'n')
 						jeszczeRaz = false;

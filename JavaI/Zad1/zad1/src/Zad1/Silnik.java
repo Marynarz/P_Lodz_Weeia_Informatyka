@@ -23,6 +23,7 @@ public class Silnik {
 		stdWejscie = new Scanner(System.in);
 		System.out.println("Podaj liczbe: ");
 		int odpowiedz = stdWejscie.nextInt();
+		stdWejscie.close();
 		
 		if(odpowiedz > magicznaLiczba)
 			return coSieDzieje.zaDuzo;
