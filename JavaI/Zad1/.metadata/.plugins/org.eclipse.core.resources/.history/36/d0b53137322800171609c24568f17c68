@@ -19,12 +19,11 @@ public class Silnik {
 	}
 	public coSieDzieje Zgaduj()
 	{
-		
 		licznikUzycia++;
 		stdWejscie = new Scanner(System.in);
 		System.out.println("Podaj liczbe: ");
 		int odpowiedz = stdWejscie.nextInt();
-		//stdWejscie.close();
+		stdWejscie.close();
 		
 		if(odpowiedz > magicznaLiczba)
 			return coSieDzieje.zaDuzo;

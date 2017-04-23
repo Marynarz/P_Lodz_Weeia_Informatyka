@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Silnik {
 	private int magicznaLiczba;
-	private Scanner stdWejscie;
+	
 	private int licznikUzycia;
 
 	public Silnik()
@@ -19,7 +19,7 @@ public class Silnik {
 	}
 	public coSieDzieje Zgaduj()
 	{
-		
+		Scanner stdWejscie;
 		licznikUzycia++;
 		stdWejscie = new Scanner(System.in);
 		System.out.println("Podaj liczbe: ");

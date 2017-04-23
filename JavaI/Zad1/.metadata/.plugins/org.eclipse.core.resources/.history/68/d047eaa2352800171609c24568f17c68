@@ -1,17 +1,12 @@
 package zad3;
 
-import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.Writer;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Zad3 {
 
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		double a,b,c,delta,x0,x1;
 		
@@ -33,29 +28,27 @@ public class Zad3 {
 		
 		delta = Math.pow(b,2) - 4 * a *c;
 		System.out.println(delta);
-		
-		Writer daneDoZapisu = new BufferedWriter(new FileWriter(args[0],true));	
-		daneDoZapisu.append("a: "+a+", b: "+b+", c: "+c+", DELTA: "+delta+"\n");
-		
+		PrintWriter daneDoZapisu = new PrintWriter(args[0]);	
+		daneDoZapisu.println("a: "+a+", b: "+b+", c: "+c+", DELTA: "+delta);
 		if(delta >0)
 		{
 			x0 = (-b - Math.sqrt(delta)) / (2 * a);
 			x1 = (-b + Math.sqrt(delta)) / (2 * a);
 			System.out.println("Dwa miejsca zerowe X0: "+x0+" i X0: "+x1);
-			daneDoZapisu.append("x0: "+x0+", x1: "+x1+"\n");
+			daneDoZapisu.println("x0: "+x0+", x1: "+x1);
 		}
 		else if(delta ==0)
 		{
 			x0 = (-b) / (2 * a);
 			System.out.println("Jedno miejsce zerowe. X0: "+x0);
-			daneDoZapisu.append("x0: "+x0+"\n");
+			daneDoZapisu.println("x0: "+x0);
 		}
 		else
 		{
 			System.out.println("Brak miejsc zerowych");
-			daneDoZapisu.append("BRAK\n");
+			daneDoZapisu.println("BRAK");
 		}
-		daneDoZapisu.append("---\n");
+		daneDoZapisu.println("---");
 		
 		daneDoZapisu.close();
 

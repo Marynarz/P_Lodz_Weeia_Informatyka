@@ -35,27 +35,27 @@ public class Zad3 {
 		System.out.println(delta);
 		
 		Writer daneDoZapisu = new BufferedWriter(new FileWriter(args[0],true));	
-		daneDoZapisu.append("a: "+a+", b: "+b+", c: "+c+", DELTA: "+delta+"\n");
+		daneDoZapisu.append("a: "+a+", b: "+b+", c: "+c+", DELTA: "+delta);
 		
 		if(delta >0)
 		{
 			x0 = (-b - Math.sqrt(delta)) / (2 * a);
 			x1 = (-b + Math.sqrt(delta)) / (2 * a);
 			System.out.println("Dwa miejsca zerowe X0: "+x0+" i X0: "+x1);
-			daneDoZapisu.append("x0: "+x0+", x1: "+x1+"\n");
+			daneDoZapisu.append("x0: "+x0+", x1: "+x1);
 		}
 		else if(delta ==0)
 		{
 			x0 = (-b) / (2 * a);
 			System.out.println("Jedno miejsce zerowe. X0: "+x0);
-			daneDoZapisu.append("x0: "+x0+"\n");
+			daneDoZapisu.append("x0: "+x0);
 		}
 		else
 		{
 			System.out.println("Brak miejsc zerowych");
-			daneDoZapisu.append("BRAK\n");
+			daneDoZapisu.append("BRAK");
 		}
-		daneDoZapisu.append("---\n");
+		daneDoZapisu.append("---");
 		
 		daneDoZapisu.close();
 
