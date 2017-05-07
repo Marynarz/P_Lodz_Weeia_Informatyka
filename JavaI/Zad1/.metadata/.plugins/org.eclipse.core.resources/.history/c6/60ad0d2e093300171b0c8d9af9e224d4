@@ -1,0 +1,12 @@
+package cars;
+
+public class Hatchback extends Car {
+	private int year;
+	private double manufacturerDiscount;
+	
+	public Hatchback(int sped, double pri, String col, int yea, double disco){
+		new Car(sped,pri,col);
+		
+	}
+
+}
