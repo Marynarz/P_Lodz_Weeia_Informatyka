@@ -6,6 +6,6 @@ public class DifferentVectorSizeException extends Exception {
 
 	public DifferentVectorSizeException(int s1, int s2)
 	{
-		System.out.println("[VECTOR_EXCEPTION]Rozna wielkosc wektorow! Wektor pierwszy: "+s1+" Wektor drugi: "+s2);
+		System.out.println("Rozna wielkosc wektorow! Wektor pierwszy: "+s1+" Wektor drugi: "+s2);
 	}
 }

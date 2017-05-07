@@ -8,8 +8,6 @@ public class vektory {
 	private Vector<Integer>drugiWektor;
 	private Vector<Integer>wyjsciowyWektor;
 	private Scanner stdWejscie;
-	private String buforDanych;
-	private String [] poSplicie;
 	
 	public vektory()
 	{
@@ -20,27 +18,21 @@ public class vektory {
 	public void dodawanieDanych()
 	{
 		stdWejscie = new Scanner(System.in);
-		this.dodawanieW1();
-		this.dodawanieW2();
-
-		//stdWejscie.close();
-		this.sumowanieDanych();
-	}
-	private void dodawanieW1()
-	{
 		System.out.println("Zawartosc pierwszego wektora: ");
-		buforDanych  = stdWejscie.nextLine();
-		poSplicie = buforDanych.split(" ");
+		String buforDanych  = stdWejscie.nextLine();
+		String [] poSplicie = buforDanych.split(" ");
 		for(String x : poSplicie)
 			pierwszyWektor.addElement(Integer.parseInt(x));
-	}
-	private void dodawanieW2()
-	{
+		System.out.println(pierwszyWektor.size());
+		
 		System.out.println("Zawartosc drugiego wektora: ");
 		buforDanych  = stdWejscie.nextLine();
 		poSplicie = buforDanych.split(" ");
 		for(String x : poSplicie)
 			drugiWektor.addElement(Integer.parseInt(x));
+		System.out.println(drugiWektor.size());
+		stdWejscie.close();
+		this.sumowanieDanych();
 	}
 	private void sumowanieDanych()
 	{
@@ -57,17 +49,14 @@ public class vektory {
 		catch(DifferentVectorSizeException e){
 			if(pierwszyWektor.size()<drugiWektor.size()){
 				System.out.println("Dopelnij pierwszy wektor o "+(drugiWektor.size()-pierwszyWektor.size())+" miejsc");
-				this.dodawanieW1();
+				String buforDanych  = stdWejscie.nextLine();
+				String [] poSplicie = buforDanych.split(" ");
+				for(String x : poSplicie)
+					pierwszyWektor.addElement(Integer.parseInt(x));
+				System.out.println(pierwszyWektor.size());
 			}
-			else{
-				System.out.println("Dopelnij drugi wektor o "+(pierwszyWektor.size()-drugiWektor.size())+" miejsc");
-				this.dodawanieW2();
-			}
+			System.out.println("Dopelnij wektor:");
 			
-			if(pierwszyWektor.size() == drugiWektor.size())
-				this.sumowanieDanych();
-			else
-				System.out.println("Nie chcesz wspolpracowac to nie");
 		}
 		
 	}
