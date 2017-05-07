@@ -4,7 +4,7 @@ public class Sedan extends Car{
 	private double lenght;
 	
 	public Sedan(int sped, double pri, String col, double len){
-		super(sped,pri,col);	
+		new Car(sped,pri,col);	
 		this.setLenght(len);
 	}
 	private void setLenght(double len){
