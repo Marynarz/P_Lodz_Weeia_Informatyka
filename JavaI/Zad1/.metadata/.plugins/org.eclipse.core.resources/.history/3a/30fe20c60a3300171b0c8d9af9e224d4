@@ -14,7 +14,7 @@ public class Sedan extends Car{
 		return this.lenght;
 	}
 	public double getSalePrice(){
-		if(this.getLenght() < 4500)
+		if(this.getLenght() > 4500)
 			return (this.price - (this.price/10));
 		else
 			return this.price;

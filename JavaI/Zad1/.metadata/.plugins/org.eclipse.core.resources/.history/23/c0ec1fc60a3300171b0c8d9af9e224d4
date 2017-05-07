@@ -1,0 +1,7 @@
+package cars;
+
+public class Autoshop {
+	Truck pickup;
+	Hatchback haczbak;
+	Sedan sedanik;
+}

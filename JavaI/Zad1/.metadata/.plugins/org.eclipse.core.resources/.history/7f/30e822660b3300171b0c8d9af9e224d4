@@ -1,0 +1,13 @@
+package cars;
+
+public class Autoshop {
+	private Truck pickup;
+	private Hatchback haczbak;
+	private Sedan sedanik;
+	
+	public Autoshop(){
+		this.pickup = new Truck(250,105000,"Brown",3400);
+		this.haczbak = new Hatchback(150,88000,"Pink",2017,12.6);
+		this.sedanik = new Sedan(184,550000,"Black",4999);
+	}
+}
