@@ -2,6 +2,7 @@ package zad5;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.util.Scanner;
 import java.util.Vector;
 

@@ -1,7 +1,5 @@
 package zad5;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -12,7 +10,6 @@ public class vektory {
 	private Scanner stdWejscie;
 	private String buforDanych;
 	private String [] poSplicie;
-	private FileWriter daneDoZapisu;
 	
 	public vektory()
 	{
@@ -53,8 +50,8 @@ public class vektory {
 			
 			for(int i=0; i<pierwszyWektor.size();i++)
 				wyjsciowyWektor.addElement(pierwszyWektor.get(i) + drugiWektor.get(i));
-			this.zapisDanych();
-			System.out.println(wyjsciowyWektor.toString());
+			
+			System.out.println(wyjsciowyWektor.size());
 			
 		}
 		catch(DifferentVectorSizeException e){
@@ -72,16 +69,7 @@ public class vektory {
 			else
 				System.out.println("Nie chcesz wspolpracowac to nie");
 		}
-		catch(IOException e){
-			System.out.println(e);
-		}
 		
-	}
-	private void zapisDanych() throws IOException{
-		String plik = "daneZad5.txt";
-		daneDoZapisu = new FileWriter(plik);
-		daneDoZapisu.write(wyjsciowyWektor.toString());
-		daneDoZapisu.close();
 	}
 	
 }
