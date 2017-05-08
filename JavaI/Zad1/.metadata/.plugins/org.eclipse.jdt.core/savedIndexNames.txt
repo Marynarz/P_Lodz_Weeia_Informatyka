@@ -1,25 +1,9 @@
 INDEX VERSION 1.129+/Users/Wojtek/P_Lodz_Weeia_Informatyka/JavaI/Zad1/.metadata/.plugins/org.eclipse.jdt.core
-1271342938.index
-124275899.index
 2668020903.index
-2084021475.index
-1888666045.index
-1499520195.index
-1416793072.index
 1986355602.index
-680827947.index
+1896392075.index
 2557149374.index
-3158197321.index
 101684509.index
-2762063732.index
-3334288320.index
-3720681883.index
-1999298954.index
+3786913818.index
 1211325199.index
 23220484.index
-1302770079.index
-2255771374.index
-3484117950.index
-3927758025.index
-3569674952.index
-2132672051.index

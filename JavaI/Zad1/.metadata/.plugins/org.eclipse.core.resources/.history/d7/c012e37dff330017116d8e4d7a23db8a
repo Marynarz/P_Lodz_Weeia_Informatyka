@@ -1,0 +1,5 @@
+package firstLocal;
+
+public abstract class Location {
+
+}

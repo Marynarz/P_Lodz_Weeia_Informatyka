@@ -1,0 +1,10 @@
+package firstLocal;
+
+public abstract class Location {
+	public static int LocationId =0;
+	
+	protected static void locationIdIcrement(){
+		LocationId++;
+	}
+
+}

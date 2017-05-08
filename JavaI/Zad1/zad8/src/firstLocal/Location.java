@@ -1,0 +1,13 @@
+package firstLocal;
+
+public abstract class Location {
+	public static int locationId =0;
+	public int buildingId;
+	public int floorId;
+	public int roomId;
+	
+	protected static void locationIdIcrement(){
+		locationId++;
+	}
+
+}
