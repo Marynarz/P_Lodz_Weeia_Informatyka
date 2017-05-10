@@ -14,7 +14,7 @@ public class Floor extends Location {
 	
 	public Floor(Building b){
 		buildingNumber = b;
-		Building.floorsNumberIcrement();
+		Building.floorsNumberIncrement();
 		this.floorId = Building.getFloorsNumber();
 	}
 

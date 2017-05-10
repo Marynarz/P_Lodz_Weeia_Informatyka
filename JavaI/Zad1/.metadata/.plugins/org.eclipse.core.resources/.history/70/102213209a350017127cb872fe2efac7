@@ -1,0 +1,11 @@
+package firstLocal;
+
+public class Room extends Location {
+
+	@Override
+	protected void descriptionLoc() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

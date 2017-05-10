@@ -16,7 +16,7 @@ public class Building extends Location {
 		// TODO Auto-generated method stub
 		System.out.println("Building: "+buildingId);
 	}
-	public static void floorsNumberIcrement(){
+	public static void floorsNumberIncrement(){
 		floorsNumber++;
 	}
 	public static int getFloorsNumber(){
