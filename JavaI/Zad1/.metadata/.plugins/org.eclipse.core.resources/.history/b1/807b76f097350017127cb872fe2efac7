@@ -1,0 +1,19 @@
+package firstLocal;
+
+public class Floor extends Location {
+	private int floorId;
+	private static int roomsNumber=0;
+	private String floorName;
+	private String floorDesc;
+	
+	public Floor(){
+		Location.locationIdIcrement();
+	}
+
+	@Override
+	protected void descriptionLoc() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

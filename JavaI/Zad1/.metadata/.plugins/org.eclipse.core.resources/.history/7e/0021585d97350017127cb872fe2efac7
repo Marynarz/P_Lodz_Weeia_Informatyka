@@ -1,0 +1,11 @@
+package firstLocal;
+
+public class Floor extends Location {
+
+	@Override
+	protected void descriptionLoc() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

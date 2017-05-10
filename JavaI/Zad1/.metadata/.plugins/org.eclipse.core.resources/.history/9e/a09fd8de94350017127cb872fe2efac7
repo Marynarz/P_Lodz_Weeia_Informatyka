@@ -1,0 +1,16 @@
+package firstLocal;
+
+public class Building extends Location {
+	private int buildingId;
+	private String buildingName;
+	private String buildingDesc;
+	
+	public Building(){
+		this.locationIdIcrement();
+		this.buildingId = this.locationId;
+	}
+	public void descriptionLoc(){
+		
+	}
+
+}

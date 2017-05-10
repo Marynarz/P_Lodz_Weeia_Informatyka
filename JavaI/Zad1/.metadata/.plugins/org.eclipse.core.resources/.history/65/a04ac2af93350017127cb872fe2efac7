@@ -9,6 +9,5 @@ public abstract class Location {
 	protected static void locationIdIcrement(){
 		locationId++;
 	}
-	protected abstract void descriptionLoc();
 
 }
