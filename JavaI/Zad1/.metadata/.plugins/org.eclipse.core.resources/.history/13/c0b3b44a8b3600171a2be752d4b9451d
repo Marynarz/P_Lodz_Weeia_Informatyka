@@ -7,9 +7,6 @@ public class Room extends Location {
 	private Floor floorNumber;
 	
 	public Room(Floor f){
-		Location.locationIdIcrement();
-		this.roomId = Location.locationId;
-		this.floorNumber = f;
 		f.addRoom(this);
 	}
 	@Override
@@ -37,9 +34,6 @@ public class Room extends Location {
 	}
 	public int getRoomId(){
 		return this.roomId;
-	}
-	private void setRoomDesc(String rDsc){
-		this.roomDesc = rDsc;
 	}
 	public String getRoomDesc(){
 		return this.roomDesc;

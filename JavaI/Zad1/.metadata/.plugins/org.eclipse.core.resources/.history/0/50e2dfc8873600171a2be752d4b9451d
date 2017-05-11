@@ -8,11 +8,9 @@ public class Building extends Location {
 	private String buildingDesc;
 	private Vector<Floor>floorsAll;
 	
-	public Building(int bNum, String bDsc){
+	public Building(){
 		Location.locationIdIcrement();
 		this.buildingId = Location.locationId;
-		this.setBuildingNumber(bNum);
-		this.setBuildingDesc(bDsc);
 		floorsAll = new Vector<Floor>();
 	}
 
@@ -21,7 +19,7 @@ public class Building extends Location {
 		// TODO Auto-generated method stub
 		
 		System.out.println("------");
-		System.out.println("Building: "+this.getBuildingId());
+		System.out.println("Building: "+this.buildingId);
 		System.out.println("Budynek numer: "+this.buildingNumber);
 		System.out.println("Opis: "+this.buildingDesc);
 		System.out.println("W budynku znjaduje sie: ");
@@ -54,9 +52,6 @@ public class Building extends Location {
 	}
 	public int getFloorsNumber(){
 		return floorsAll.size();
-	}
-	public int getBuildingId(){
-		return this.buildingId;
 	}
 
 }

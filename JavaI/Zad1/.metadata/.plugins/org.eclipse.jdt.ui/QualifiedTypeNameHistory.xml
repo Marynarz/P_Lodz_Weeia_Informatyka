@@ -3,12 +3,12 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="Zad1.Silnik.coSieDzieje"/>
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
-<fullyQualifiedTypeName name="java.util.Vector"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 <fullyQualifiedTypeName name="zad5.DifferentVectorSizeException"/>
 <fullyQualifiedTypeName name="java.io.Writer"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

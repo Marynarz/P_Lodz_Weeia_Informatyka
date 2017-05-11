@@ -7,9 +7,6 @@ public class Room extends Location {
 	private Floor floorNumber;
 	
 	public Room(Floor f){
-		Location.locationIdIcrement();
-		this.roomId = Location.locationId;
-		this.floorNumber = f;
 		f.addRoom(this);
 	}
 	@Override
@@ -17,8 +14,11 @@ public class Room extends Location {
 		// TODO Auto-generated method stub
 		System.out.println("------");
 		System.out.println("Room: "+this.getRoomId());
-		System.out.println("Pokoj numer: "+this.getRoomNumber());
-		System.out.println("Opis: "+this.getRoomDesc());
+		System.out.println("Pietro numer: "+this.getFloorNumber());
+		System.out.println("Opis: "+this.getFloorDesc());
+		System.out.println("Na pietrze znjaduje sie: ");
+		for(int i=0; i<this.roomsAll.size();i++)
+			this.roomsAll.get(i).descriptionLoc();
 		System.out.println("------");
 	}
 	public int getRoomNumber(){
@@ -37,12 +37,6 @@ public class Room extends Location {
 	}
 	public int getRoomId(){
 		return this.roomId;
-	}
-	private void setRoomDesc(String rDsc){
-		this.roomDesc = rDsc;
-	}
-	public String getRoomDesc(){
-		return this.roomDesc;
 	}
 
 }

@@ -13,7 +13,6 @@ public class Floor extends Location {
 		Location.locationIdIcrement();
 		this.floorId = Location.locationId;
 		this.setFloorNumber(fNum);
-		this.setFloorDesc(fDesc);
 		this.buildingNumber = b;
 		this.buildingNumber.addFloor(this);
 	}
