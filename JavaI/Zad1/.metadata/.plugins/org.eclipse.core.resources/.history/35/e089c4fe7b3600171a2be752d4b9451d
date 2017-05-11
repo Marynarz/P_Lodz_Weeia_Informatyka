@@ -16,16 +16,5 @@ public class Room extends Location {
 	public int getRoomNumber(){
 		return this.roomNumber;
 	}
-	public void setRoomNumber(int rNum){
-		try{
-			if(rNum>0)
-				this.roomNumber = rNum;
-			else
-				throw new WrongNumberException(rNum,this);
-		}
-		catch(WrongNumberException e){
-			e.setProperNumber(this);
-		}
-	}
 
 }

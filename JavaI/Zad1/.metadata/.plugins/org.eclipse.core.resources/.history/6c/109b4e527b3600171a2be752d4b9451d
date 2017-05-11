@@ -27,17 +27,6 @@ public class Floor extends Location {
 	public int getRoomsNumber(){
 		return roomsAll.size();
 	}
-	public void setFloorNumber(int fNum){
-		try{
-			if(fNum>0)
-				this.floorNumber = fNum;
-			else
-				throw new WrongNumberException(fNum,this);
-		}
-		catch(WrongNumberException e){
-			e.setProperNumber(this);
-		}
-	}
 	public int getFloorNumber(){
 		return this.floorNumber;
 	}
