@@ -24,9 +24,9 @@ public class Building extends Location {
 			if(bNum >0)
 				this.buildingNumber=bNum;
 			else
-				throw new WrongNumberException(bNum,this);
+				throw new WrongBuildingNumberException(bNum);
 		}
-		catch(WrongNumberException e){
+		catch(WrongBuildingNumberException e){
 			e.setProperNumber(this);
 		}
 	}

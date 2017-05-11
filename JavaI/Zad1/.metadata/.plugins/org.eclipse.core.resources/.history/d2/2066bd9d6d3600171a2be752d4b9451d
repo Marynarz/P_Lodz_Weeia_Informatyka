@@ -1,20 +1,17 @@
 package firstLocal;
 
 public class Room extends Location {
-	private int roomId;
-	private int roomNumber;
+	public int roomId;
+	public String roomName;
 	private Floor floorNumber;
 	
 	public Room(Floor f){
-		f.addRoom(this);
+		this.floorNumber = f;
 	}
 	@Override
 	protected void descriptionLoc() {
 		// TODO Auto-generated method stub
 
-	}
-	public int getRoomNumber(){
-		return this.roomNumber;
 	}
 
 }

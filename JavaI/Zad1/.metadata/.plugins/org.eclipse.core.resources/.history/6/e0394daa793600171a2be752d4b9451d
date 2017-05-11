@@ -5,7 +5,7 @@ import java.util.Vector;
 public class Floor extends Location {
 	private int floorId;
 	private static int roomsNumber=0;
-	private int floorNumber;
+	private String floorName;
 	private String floorDesc;
 	private Building buildingNumber;
 	private Vector<Room>roomsAll;
@@ -26,9 +26,6 @@ public class Floor extends Location {
 	}
 	public int getRoomsNumber(){
 		return roomsAll.size();
-	}
-	public int getFloorNumber(){
-		return this.floorNumber;
 	}
 
 }

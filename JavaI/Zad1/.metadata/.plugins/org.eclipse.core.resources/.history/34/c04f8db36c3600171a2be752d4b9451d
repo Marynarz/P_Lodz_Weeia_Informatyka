@@ -1,19 +1,21 @@
 package firstLocal;
 
-import java.util.Vector;
-
 public class Floor extends Location {
 	private int floorId;
 	private static int roomsNumber=0;
-	private int floorNumber;
+	private String floorName;
 	private String floorDesc;
 	private Building buildingNumber;
-	private Vector<Room>roomsAll;
 	
-	public Floor(Building b){
+	public Floor(){
 		Location.locationIdIcrement();
 		this.floorId = Location.locationId;
-		b.addFloor(this);
+	}
+	
+	public Floor(Building b){
+		buildingNumber = b;
+		Building.floorsNumberIcrement();
+		this.floorId = Building.getFloorsNumber();
 	}
 
 	@Override
@@ -21,14 +23,8 @@ public class Floor extends Location {
 		// TODO Auto-generated method stub
 
 	}
-	public void addRoom(Room r){
-		roomsAll.addElement(r);
-	}
-	public int getRoomsNumber(){
-		return roomsAll.size();
-	}
-	public int getFloorNumber(){
-		return this.floorNumber;
+	public static void roomsNumberIcrement(){
+		roomsNumber++;
 	}
 
 }

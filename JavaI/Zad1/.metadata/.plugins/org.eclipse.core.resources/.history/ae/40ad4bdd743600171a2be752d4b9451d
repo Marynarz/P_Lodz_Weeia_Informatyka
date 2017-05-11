@@ -24,20 +24,11 @@ public class Building extends Location {
 			if(bNum >0)
 				this.buildingNumber=bNum;
 			else
-				throw new WrongNumberException(bNum,this);
+				throw new WrongBuildingNumberException(bNum);
 		}
-		catch(WrongNumberException e){
+		catch(WrongBuildingNumberException e){
 			e.setProperNumber(this);
 		}
-	}
-	public int getBuldingNumber(){
-		return this.buildingNumber;
-	}
-	public void setBuildingDesc(String bDesc){
-		this.buildingDesc = bDesc;
-	}
-	public String getBuildingDesc(){
-		return this.buildingDesc;
 	}
 	public void addFloor(Floor f){
 		floorsAll.addElement(f);

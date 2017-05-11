@@ -20,24 +20,7 @@ public class Building extends Location {
 		System.out.println("Building: "+buildingId);
 	}
 	public void setBuildingNumber(int bNum){
-		try{
-			if(bNum >0)
-				this.buildingNumber=bNum;
-			else
-				throw new WrongNumberException(bNum,this);
-		}
-		catch(WrongNumberException e){
-			e.setProperNumber(this);
-		}
-	}
-	public int getBuldingNumber(){
-		return this.buildingNumber;
-	}
-	public void setBuildingDesc(String bDesc){
-		this.buildingDesc = bDesc;
-	}
-	public String getBuildingDesc(){
-		return this.buildingDesc;
+		
 	}
 	public void addFloor(Floor f){
 		floorsAll.addElement(f);
