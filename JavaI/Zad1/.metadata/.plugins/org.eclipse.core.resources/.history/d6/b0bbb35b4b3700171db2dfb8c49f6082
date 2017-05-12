@@ -50,6 +50,7 @@ public class Room extends Location{
 	public int compareTo(Location o) {
 		// TODO Auto-generated method stub
 		try{
+			Room& r = static_cast<Room&>(o);
 			
 		}
 		return 0;

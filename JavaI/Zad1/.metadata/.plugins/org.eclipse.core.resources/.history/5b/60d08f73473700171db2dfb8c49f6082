@@ -1,6 +1,6 @@
 package firstLocal;
 
-public abstract class Location implements Comparable<Location> {
+public abstract class Location {
 	public static int locationId =0;
 	public int buildingId;
 	public int floorId;

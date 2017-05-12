@@ -59,10 +59,4 @@ public class Floor extends Location {
 	public int getFloorId(){
 		return this.floorId;
 	}
-
-	@Override
-	public int compareTo(Location o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 }

@@ -59,10 +59,4 @@ public class Building extends Location {
 		return this.buildingId;
 	}
 
-	@Override
-	public int compareTo(Location o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
 }

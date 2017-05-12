@@ -1,6 +1,6 @@
 package firstLocal;
 
-public class Room extends Location{
+public class Room extends Location implements Comparable<Room>{
 	private int roomId;
 	private int roomNumber;
 	private String roomDesc;
@@ -47,11 +47,8 @@ public class Room extends Location{
 		return this.roomDesc;
 	}
 	@Override
-	public int compareTo(Location o) {
+	public int compareTo(Room o) {
 		// TODO Auto-generated method stub
-		try{
-			
-		}
 		return 0;
 	}
 

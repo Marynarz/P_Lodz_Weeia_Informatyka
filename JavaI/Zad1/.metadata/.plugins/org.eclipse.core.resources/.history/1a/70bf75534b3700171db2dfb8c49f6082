@@ -49,9 +49,6 @@ public class Room extends Location{
 	@Override
 	public int compareTo(Location o) {
 		// TODO Auto-generated method stub
-		try{
-			
-		}
 		return 0;
 	}
 

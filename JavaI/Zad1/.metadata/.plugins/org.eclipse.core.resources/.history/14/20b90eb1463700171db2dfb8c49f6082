@@ -1,18 +1,16 @@
 package firstLocal;
 
-public class Room extends Location{
+public class Room extends Location {
 	private int roomId;
 	private int roomNumber;
 	private String roomDesc;
 	private Floor floorNumber;
 	
-	public Room(Floor f, int rNum, String rDsc){
+	public Room(Floor f){
 		Location.locationIdIcrement();
 		this.roomId = Location.locationId;
 		this.floorNumber = f;
-		this.floorNumber.addRoom(this);
-		this.setRoomDesc(rDsc);
-		this.setRoomNumber(rNum);
+		f.addRoom(this);
 	}
 	@Override
 	protected void descriptionLoc() {
@@ -45,14 +43,6 @@ public class Room extends Location{
 	}
 	public String getRoomDesc(){
 		return this.roomDesc;
-	}
-	@Override
-	public int compareTo(Location o) {
-		// TODO Auto-generated method stub
-		try{
-			
-		}
-		return 0;
 	}
 
 }
