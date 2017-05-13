@@ -10,7 +10,6 @@ public class Floor extends Location {
 	private Vector<Room>roomsAll;
 	
 	public Floor(Building b, int fNum, String fDesc){
-		this.roomsAll = new Vector<Room>();
 		Location.locationIdIcrement();
 		this.floorId = Location.locationId;
 		this.setFloorNumber(fNum);
@@ -39,7 +38,7 @@ public class Floor extends Location {
 	}
 	public void setFloorNumber(int fNum){
 		try{
-			if(fNum>=0)
+			if(fNum>0)
 				this.floorNumber = fNum;
 			else
 				throw new WrongNumberException(fNum,this);

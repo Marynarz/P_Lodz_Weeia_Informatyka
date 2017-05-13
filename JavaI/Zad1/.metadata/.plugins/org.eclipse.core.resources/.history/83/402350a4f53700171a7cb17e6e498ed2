@@ -2,7 +2,7 @@ package firstLocal;
 
 public class Room extends Location{
 	private int roomId;
-	private Integer roomNumber;
+	public Integer roomNumber;
 	private String roomDesc;
 	private Floor floorNumber;
 	

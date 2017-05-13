@@ -2,7 +2,7 @@ package firstLocal;
 
 public class Room extends Location{
 	private int roomId;
-	private Integer roomNumber;
+	private int roomNumber;
 	private String roomDesc;
 	private Floor floorNumber;
 	
@@ -23,10 +23,10 @@ public class Room extends Location{
 		System.out.println("Opis: "+this.getRoomDesc());
 		System.out.println("------");
 	}
-	public Integer getRoomNumber(){
+	public int getRoomNumber(){
 		return this.roomNumber;
 	}
-	public void setRoomNumber(Integer rNum){
+	public void setRoomNumber(int rNum){
 		try{
 			if(rNum>0)
 				this.roomNumber = rNum;
@@ -50,13 +50,9 @@ public class Room extends Location{
 	public int compareTo(Location o) {
 		// TODO Auto-generated method stub
 		try{
-			Room r1 = (Room) o;
-			return this.getRoomNumber().compareTo(r1.getRoomNumber());
+			
 		}
-		catch(ClassCastException e) {
-			System.out.println("Blad rzutowania return 0");
-			return 0;
-		}
+		return 0;
 	}
 
 }

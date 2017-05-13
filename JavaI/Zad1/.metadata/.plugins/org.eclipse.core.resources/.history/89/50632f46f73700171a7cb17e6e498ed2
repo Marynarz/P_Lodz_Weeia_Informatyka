@@ -10,7 +10,6 @@ public class Floor extends Location {
 	private Vector<Room>roomsAll;
 	
 	public Floor(Building b, int fNum, String fDesc){
-		this.roomsAll = new Vector<Room>();
 		Location.locationIdIcrement();
 		this.floorId = Location.locationId;
 		this.setFloorNumber(fNum);
