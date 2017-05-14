@@ -60,7 +60,7 @@ public class Building extends Location {
 		floorsAll.add(f);
 	}
 	public Integer getFloorsNumber(){
-		return (Integer) floorsAll.size();
+		return floorsAll.size();
 	}
 	public int getBuildingId(){
 		return this.buildingId;

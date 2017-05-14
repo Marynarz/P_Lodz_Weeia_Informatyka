@@ -10,4 +10,5 @@ public abstract class Location implements Comparable<Location> {
 		locationId++;
 	}
 	protected abstract void descriptionLoc();
+
 }

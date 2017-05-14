@@ -75,4 +75,7 @@ public class Floor extends Location {
 			return 0;
 		}
 	}
+	public void sortRooms(){
+		Collections.sort(this.roomsAll);
+	}
 }

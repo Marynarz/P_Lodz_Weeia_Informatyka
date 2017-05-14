@@ -1,6 +1,5 @@
 package firstLocal;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
 
@@ -60,7 +59,7 @@ public class Building extends Location {
 		floorsAll.add(f);
 	}
 	public Integer getFloorsNumber(){
-		return (Integer) floorsAll.size();
+		return floorsAll.size();
 	}
 	public int getBuildingId(){
 		return this.buildingId;
@@ -69,7 +68,6 @@ public class Building extends Location {
 	@Override
 	public int compareTo(Location o) {
 		try{
-			Collections.sort(this.floorsAll);
 			Building r1 = (Building) o;
 			return this.getFloorsNumber().compareTo(r1.getFloorsNumber());
 		}

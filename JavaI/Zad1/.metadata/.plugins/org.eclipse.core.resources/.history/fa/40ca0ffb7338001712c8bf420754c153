@@ -10,4 +10,10 @@ public abstract class Location implements Comparable<Location> {
 		locationId++;
 	}
 	protected abstract void descriptionLoc();
+	public int compareTo(Room o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
 }

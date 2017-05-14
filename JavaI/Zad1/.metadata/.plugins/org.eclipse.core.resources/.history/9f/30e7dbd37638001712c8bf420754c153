@@ -29,10 +29,10 @@ public class WrongNumberException extends Exception {
 		else{
 			System.out.println("Foch z przytupem i melodyjka!");
 		}
-		//stdWejscie.close();
+		stdWejscie.close();
 	}
 	public void setProperNumber(Floor f){
-		System.out.println("Do you want set proper floorNumber? (Y/N); ");
+		System.out.println("Do you want set proper buildingNumber? (Y/N); ");
 		Scanner stdWejscie = new Scanner(System.in);
 		char answer = stdWejscie.nextLine().charAt(0);
 		if(answer == 'Y' || answer == 'y'){
@@ -43,10 +43,10 @@ public class WrongNumberException extends Exception {
 		else{
 			System.out.println("Foch z przytupem i melodyjka!");
 		}
-		//stdWejscie.close();
+		stdWejscie.close();
 	}
 	public void setProperNumber(Room r){
-		System.out.println("Do you want set proper roomNumber? (Y/N); ");
+		System.out.println("Do you want set proper buildingNumber? (Y/N); ");
 		Scanner stdWejscie = new Scanner(System.in);
 		char answer = stdWejscie.nextLine().charAt(0);
 		if(answer == 'Y' || answer == 'y'){
@@ -57,6 +57,6 @@ public class WrongNumberException extends Exception {
 		else{
 			System.out.println("Foch z przytupem i melodyjka!");
 		}
-		//stdWejscie.close();
+		stdWejscie.close();
 	}
 }

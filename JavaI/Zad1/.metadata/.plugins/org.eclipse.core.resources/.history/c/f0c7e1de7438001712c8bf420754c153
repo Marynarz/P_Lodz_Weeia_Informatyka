@@ -28,16 +28,17 @@ public class Floor extends Location {
 		System.out.println("Floor: "+this.getFloorId());
 		System.out.println("Pietro numer: "+this.getFloorNumber());
 		System.out.println("Opis: "+this.getFloorDesc());
-		System.out.println("Na pietrze znjaduje sie: " + this.getRoomsNumber());
+		System.out.println("Na pietrze znjaduje sie: ");
 		for(int i=0; i<this.roomsAll.size();i++)
 			this.roomsAll.get(i).descriptionLoc();
 		System.out.println("------");
+		Collections.sort(this.roomsAll);
 	}
 	public void addRoom(Room r){
 		roomsAll.add(r);
 	}
 	public Integer getRoomsNumber(){
-		return (Integer)roomsAll.size();
+		return roomsAll.size();
 	}
 	public void setFloorNumber(int fNum){
 		try{
@@ -66,7 +67,6 @@ public class Floor extends Location {
 	@Override
 	public int compareTo(Location o) {
 		try{
-			Collections.sort(this.roomsAll);
 			Floor r1 = (Floor) o;
 			return this.getRoomsNumber().compareTo(r1.getRoomsNumber());
 		}
@@ -74,5 +74,8 @@ public class Floor extends Location {
 			System.out.println("Blad rzutowania return 0");
 			return 0;
 		}
+	}
+	public void sortRooms(){
+		Collections.sort(this.roomsAll);
 	}
 }
