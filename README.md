@@ -12,3 +12,8 @@ zad 4. Liczby zespolone - folder Complex
     implementacja klasy - ComplexC.cpp
     
 Pozdrowienia!
+
+[AKTUALIZACJA]
+java1/Zad1 <-- Wszystkie zadania z JAVY z semestru 4
+bash_lab/Seba <- Zdanie z basha: wczytanie liczb z pliku i zwrócenie iloczynu
+bash_lab/Tomus <- Zdanie z basha: wypisanie założonej liczby liczb peirwszych
