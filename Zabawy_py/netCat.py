@@ -65,7 +65,7 @@ def main():
     server_loop()
 
 def client_sender(buffer):
-  client = socket.socket(socket.AF_INET,socket.SOCK_STREAM,proto,socket.getprotobyname('tcp'))
+  client = socket.socket(socket.AF_INET,socket.SOCK_STREAM,socket.getprotobyname('tcp'))
   try:
     client.connect((target,port))
     
@@ -93,4 +93,34 @@ def client_sender(buffer):
    finally:
      client.close()
 	
+def server_loop():
+  global target
+  #jesli target nie zostal okreslony:
+  if not target:
+    target = "0.0.0.0"
+  
+  #tworzenie gniazdka
+  server = socket.socket(socket.AF_INET,socket.SOCK_STREAM,socket.getprotobyname('tcp'))
+  server.bind((target,port))
+  #jestesmy gotowi na 5 polaczen
+  server.listen(5)
+  
+  while True:
+    client_socket, addr = server.accept()
+    #tworzenie watku
+    client_thread = threading.Thread(target=client_handler,args=(client_socket,))
+    client_thread.start()
+    
+def run_command(command):
+  #wywalamy znak nowej lini
+  command = command.rstrip()
+  
+  #wykonanie polecania na localnym shellu i odebranie wyniku
+  try:
+    output = subprocess.check_output(command,stderr=subprocess.STDOUT,shell=True)
+  except:
+    output = "[**]COMM_FAULT: nie udalo sie wykonac polecenia."
+  return output
+
 main()
+
