@@ -13,44 +13,59 @@
 main:
     
 
-        BL      output_init         
-	BL	led_on
-	BL	led_segm1_on
-	BL	led_segm2_on
-
-	LDR     R0, =LED_DECODER
-	LDR     R0, [R0]
-        LDR     R1, =PIOB_SODR
-        STR     R0, [R1]     
-
-	BL	led_clear_all
+        BL      output_init
 	
-	LDR     R0, =LED_DECODER
-	LDR     R0, [R0, #4]
-        LDR     R1, =PIOB_SODR
-        STR     R0, [R1]     
+glowne:
+	BL	led_on
+	BL	timer
+	BL	led_off
+	BL 	timer
+	B	glowne
+	
+	#BL	led_segm1_on
+	#BL	led_segm2_off
 
-	BL	led_clear_all
+	#LDR     R0, =LED_DECODER
+	#LDR     R0, [R0]
+        #LDR     R1, =PIOB_SODR
+        #STR     R0, [R1]     
 
-	LDR     R0, =LED_DECODER
-	LDR     R0, [R0, #8]
-        LDR     R1, =PIOB_SODR
-        STR     R0, [R1]     
+	#BL	led_clear_allglowne
+	
+	#LDR     R0, =LED_DECODER
+	#LDR     R0, [R0, #4]
+        #LDR     R1, =PIOB_SODR
+        #STR     R0, [R1]     
 
-	BL	led_clear_all
+	#BL	led_clear_all
 
-	LDR     R0, =LED_DECODER
-	LDR     R0, [R0, #12]
-        LDR     R1, =PIOB_SODR
-        STR     R0, [R1]     
+	#LDR     R0, =LED_DECODER
+	#LDR     R0, [R0, #8]
+        #LDR     R1, =PIOB_SODR
+        #STR     R0, [R1]     
+
+	#BL	led_clear_all
+
+	#LDR     R0, =LED_DECODER
+	#LDR     R0, [R0, #12]
+        #LDR     R1, =PIOB_SODR
+        #STR     R0, [R1]     
 
 loop:	
 	B	loop
 
 
+timer:
+	LDR	R8, =0x6ACFC0
+	timer2:
+	    SUBS	R8, R8, #1
+	    BNE		timer2
+	MOV 	PC, LR
+	
+
 led_on:
         STMFD   SP!, {R0, R1, R2, LR}
-        LDR     R0, =0x00010000			// pin 16
+        LDR     R0, =(1<<8)			// pin 16
         LDR     R1, =PIOB_CODR
         STR     R0, [R1]     
         LDMFD   SP!, {R0, R1, R2, LR}
@@ -60,7 +75,7 @@ led_on:
 led_off:
         
         STMFD   SP!, {R0, R1, R2, LR}
-        LDR     R0, =0x00010000			// pin 16
+        LDR     R0, =(1<<8)			// pin 16
         LDR     R1, =PIOB_SODR
         STR     R0, [R1]     
         LDMFD   SP!, {R0, R1, R2, LR}
@@ -76,7 +91,6 @@ led_segm1_on:
 
 
 led_segm1_off:
-        
         STMFD   SP!, {R0, R1, R2, LR}
         LDR     R0, =0x10000000			// pin 16
         LDR     R1, =PIOB_SODR
@@ -105,7 +119,7 @@ led_segm2_off:
 output_init:
         STMFD   SP!, {R0, R1, R2, LR}
 
-        LDR     R1, =0xFFFFFFFF			// caly port b
+        LDR     R1, =(1<<8)			// caly port b
         LDR     R2, =PIOB_PER
         STR     R1, [R2]
         LDR     R2, =PIOB_OER
