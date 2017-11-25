@@ -11,7 +11,7 @@ void* function( void* arg)
 void* function2( void* arg)
 {
 	for(int i=0; i<10;i++)
-		printf("Count: %d\n",i);
+		printf("Count: %d\n");
 	printf("This is thread %d\n",pthread_self());
 	return 0;
 }

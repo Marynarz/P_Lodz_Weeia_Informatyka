@@ -8,3 +8,85 @@ make: Nothing to be done for 'all'.
 09:04:02 **** Incremental Build of configuration x86_64-debug for project 1 ****
 make -j4 all 
 make: Nothing to be done for 'all'.
+09:17:07 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c:3:19: fatal error: pthread: No such file or directory
+compilation terminated.
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/1.o' failed
+make: *** [build/x86_64-debug/src/1.o] Error 1
+09:17:18 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c:3:19: fatal error: pthread: No such file or directory
+compilation terminated.
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/1.o' failed
+make: *** [build/x86_64-debug/src/1.o] Error 1
+09:17:36 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c: In function 'main':
+src/1.c:19:5: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+     sleep( 60 );
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  
+09:19:34 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c:11:7: error: redefinition of 'function'
+ void* function( void* arg)
+       ^
+src/1.c:5:7: note: previous definition of 'function' was here
+ void* function( void* arg)
+       ^
+src/1.c: In function 'main':
+src/1.c:28:5: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+     sleep( 60 );
+     ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/1.o' failed
+make: *** [build/x86_64-debug/src/1.o] Error 1
+09:19:52 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c: In function 'main':
+src/1.c:28:5: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+     sleep( 60 );
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  
+09:21:48 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  
+09:22:22 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c: In function 'main':
+src/1.c:31:5: error: expected ';' before 'return'
+     return EXIT_SUCCESS;
+     ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/1.o' failed
+make: *** [build/x86_64-debug/src/1.o] Error 1
+09:22:30 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  
+09:23:35 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c: In function 'main':
+src/1.c:21:17: warning: unused variable 'attr' [-Wunused-variable]
+  pthread_attr_t attr;
+                 ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  
+09:23:53 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c: In function 'main':
+src/1.c:21:17: warning: unused variable 'attr' [-Wunused-variable]
+  pthread_attr_t attr;
+                 ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  

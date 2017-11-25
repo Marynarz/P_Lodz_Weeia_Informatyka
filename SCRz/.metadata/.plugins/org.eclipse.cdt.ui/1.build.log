@@ -1,6 +1,11 @@
-09:04:02 **** Incremental Build of configuration x86_64-debug for project 1 ****
+09:23:53 **** Incremental Build of configuration x86_64-debug for project 1 ****
 make -j4 all 
-make: Nothing to be done for 'all'.
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c: In function 'main':
+src/1.c:21:17: warning: unused variable 'attr' [-Wunused-variable]
+  pthread_attr_t attr;
+                 ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  
 
-09:04:03 Build Finished (took 94ms)
+09:23:53 Build Finished (took 157ms)
 
