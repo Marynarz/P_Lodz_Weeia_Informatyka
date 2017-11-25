@@ -15,9 +15,8 @@ void* function( void* arg)
 	while (1)
 	{
 		sigwaitinfo(&set, &info);
-		printf("Odebrano!");
-		break;
-	}
+		printf("Odebrano!")
+	};
 
 	return 0;
 }
@@ -41,12 +40,12 @@ int main(void) {
 
 
 	   pthread_create( &tid1, NULL, &function, NULL ); //utworzenie watku
-	   //pthread_create( &tid2, NULL, &function2, NULL);
+	   pthread_create( &tid2, NULL, &function2, NULL);
 
 	   sleep(10);
 	   sigqueue(getpid(),41,value);
 
 	   pthread_join(tid1,NULL); //zablokowanie programu do czasu wykonania watku tid
-	   //pthread_join(tid2,NULL);
+	   pthread_join(tid2,NULL);
 	   return EXIT_SUCCESS;
 }

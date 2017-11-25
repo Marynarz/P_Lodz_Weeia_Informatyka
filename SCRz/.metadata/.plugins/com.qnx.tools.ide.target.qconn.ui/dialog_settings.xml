@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="10.101.87.114">
+		<section name="OpenSshAction">
+			<item value="qnxuser" key="ssh.user"/>
+		</section>
+	</section>
+</section>

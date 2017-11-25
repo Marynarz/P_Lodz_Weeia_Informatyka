@@ -6,18 +6,10 @@
 void* function( void* arg)
 {
 	sigset_t set;
-	siginfo_t info;
 	sigfillset(&set); //blokuje wszystkie synaly
 	sigdelset(&set,SIGRTMIN); //przepuszcza konkretny sygnal
 
 	printf("This is thread %d\n",pthread_self());
-
-	while (1)
-	{
-		sigwaitinfo(&set, &info);
-		printf("Odebrano!");
-		break;
-	}
 
 	return 0;
 }
@@ -41,12 +33,12 @@ int main(void) {
 
 
 	   pthread_create( &tid1, NULL, &function, NULL ); //utworzenie watku
-	   //pthread_create( &tid2, NULL, &function2, NULL);
+	   pthread_create( &tid2, NULL, &function2, NULL);
 
-	   sleep(10);
+	   sleep(40);
 	   sigqueue(getpid(),41,value);
 
 	   pthread_join(tid1,NULL); //zablokowanie programu do czasu wykonania watku tid
-	   //pthread_join(tid2,NULL);
+	   pthread_join(tid2,NULL);
 	   return EXIT_SUCCESS;
 }
