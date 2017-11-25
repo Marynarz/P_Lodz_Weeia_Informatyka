@@ -1,0 +1,10 @@
+09:03:05 **** Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  
+09:03:38 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+09:04:02 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
