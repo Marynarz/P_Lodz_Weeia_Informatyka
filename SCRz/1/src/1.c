@@ -21,7 +21,7 @@ void* function( void* arg)
 	while (1)
 	{
 		sigwaitinfo(&set, &info);
-		printf("Odebrano! Sygnal nr: %d, z danymi: %d\n",++counter,info.__data.__proc.__pdata.__kill.__value.sival_int);
+		printf("Odebrano! Sygnal w kolejnosci: %d, NR sygnalu: %d,z danymi: %d\n",++counter,info.si_code,info.__data.__proc.__pdata.__kill.__value.sival_int);
 	}
 
 	return 0;
@@ -29,9 +29,25 @@ void* function( void* arg)
 
 void* function2( void* arg)
 {
-	for(int i=0; i<10;i++)
-		printf("Count: %d\n",i);
+	unsigned int counter =0;
+	sigset_t set;
+	siginfo_t info;
+	sigfillset(&set); //blokuje wszystkie synaly
+	sigdelset(&set,42); //przepuszcza konkretny sygnal
+
+	pthread_sigmask(SIG_BLOCK,&set,NULL);
+
 	printf("This is thread %d\n",pthread_self());
+
+	sigemptyset(&set);
+	sigaddset(&set,42);
+
+	while (1)
+	{
+		sigwaitinfo(&set, &info);
+		printf("Odebrano! Sygnal w kolejnosci: %d, NR sygnalu: %d,z danymi: %d\n",++counter,info.si_code,info.__data.__proc.__pdata.__kill.__value.sival_int);
+	}
+
 	return 0;
 }
 
@@ -47,16 +63,16 @@ int main(void) {
 	pthread_sigmask( SIG_BLOCK, &set, NULL);
 
 	pthread_create( &tid1, NULL, &function, NULL ); //utworzenie watku
-	//pthread_create( &tid2, NULL, &function2, NULL);
-	while(1)
+	pthread_create( &tid2, NULL, &function2, NULL);
+	/*while(1)
 	{
 			sleep(5);
 			value.sival_int++;
 			sigqueue(getpid(),SIGRTMIN,value); //wysylanie sygnalu
-	}
+	}*/
 
 
 	pthread_join(tid1,NULL); //zablokowanie programu do czasu wykonania watku tid
-	//pthread_join(tid2,NULL);
+	pthread_join(tid2,NULL);
 	return EXIT_SUCCESS;
 }

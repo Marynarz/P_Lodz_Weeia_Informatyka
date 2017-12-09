@@ -1,6 +1,6 @@
-09:46:56 **** Incremental Build of configuration x86_64-debug for project 1_kill ****
+10:00:21 **** Incremental Build of configuration x86_64-debug for project 1_kill ****
 make -j4 all 
 make: Nothing to be done for 'all'.
 
-09:46:56 Build Finished (took 94ms)
+10:00:21 Build Finished (took 94ms)
 

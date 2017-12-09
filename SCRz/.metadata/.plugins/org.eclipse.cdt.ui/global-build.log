@@ -382,3 +382,20 @@ make: Nothing to be done for 'all'.
 09:46:56 **** Incremental Build of configuration x86_64-debug for project 1_kill ****
 make -j4 all 
 make: Nothing to be done for 'all'.
+09:59:50 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
+src/1.c: In function 'main':
+src/1.c:59:15: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  union sigval value;
+               ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  
+09:59:56 **** Incremental Build of configuration x86_64-debug for project 1_kill ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+10:00:07 **** Incremental Build of configuration x86_64-debug for project 1 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+10:00:21 **** Incremental Build of configuration x86_64-debug for project 1_kill ****
+make -j4 all 
+make: Nothing to be done for 'all'.

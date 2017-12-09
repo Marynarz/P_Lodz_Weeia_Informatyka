@@ -1,17 +1,6 @@
-09:36:24 **** Incremental Build of configuration x86_64-debug for project 1 ****
+10:00:07 **** Incremental Build of configuration x86_64-debug for project 1 ****
 make -j4 all 
-qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/1.d,-MT,build/x86_64-debug/src/1.o -o build/x86_64-debug/src/1.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/1.c
-src/1.c: In function 'main':
-src/1.c:53:4: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
-    sleep(5);
-    ^
-src/1.c:55:13: warning: implicit declaration of function 'getpid' [-Wimplicit-function-declaration]
-    sigqueue(getpid(),SIGRTMIN,value); //wysylanie sygnalu
-             ^
-src/1.c:39:18: warning: unused variable 'tid2' [-Wunused-variable]
-  pthread_t tid1, tid2;
-                  ^
-qcc -Vgcc_ntox86_64 -o build/x86_64-debug/1   build/x86_64-debug/src/1.o  
+make: Nothing to be done for 'all'.
 
-09:36:24 Build Finished (took 172ms)
+10:00:08 Build Finished (took 94ms)
 
