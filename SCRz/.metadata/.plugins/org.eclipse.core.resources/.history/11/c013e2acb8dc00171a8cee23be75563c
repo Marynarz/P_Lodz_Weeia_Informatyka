@@ -21,7 +21,7 @@ void* function( void* arg)
 	while (1)
 	{
 		sigwaitinfo(&set, &info);
-		printf("Odebrano! Sygnal nr: %d\n",++counter);
+		printf("Odebrano! Sygnal nr: %d\n",counter++);
 	}
 
 	return 0;

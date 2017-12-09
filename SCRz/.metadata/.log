@@ -664,3 +664,141 @@ com.qnx.tools.ide.utils.target.RemoteIOException: Remove No such file or directo
 	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1185)
 	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:441)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-11-25 10:25:27.245 -----------------------------------------------
+eclipse.buildId=7.0.0
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-11-25 10:25:35.214
+!MESSAGE Enablement expression is missing for config provider for com.qnx.tools.ide.qde.core.recursiveMkProject
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-11-25 10:25:35.511
+!MESSAGE Enablement expression is missing for config provider for com.qnx.tools.ide.qde.debug.core.descriptorType.default
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-11-25 10:25:35.511
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-11-25 10:25:35.511
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-11-25 10:25:35.526
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.qnx.tools.ide.capabilities.ui 4 0 2017-11-25 10:26:03.569
+!MESSAGE activityProfiles.activityRequirementBinding: Invalid activityId com.qnx.tools.ide.capabilities.ui.activity.qnxSystemDeveloper
+
+!ENTRY com.qnx.tools.ide.capabilities.ui 4 0 2017-11-25 10:26:03.585
+!MESSAGE activityProfiles.activityRequirementBinding: Invalid requiredActivityId com.qnx.tools.ide.capabilities.ui.activity.qnxDeveloper
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-11-25 10:32:38.968
+!MESSAGE Indexed 'ezbarja' (1 sources, 16 headers) in 0,203 sec: 520 declarations; 871 references; 0 unresolved inclusions; 7 syntax errors; 2 unresolved names (0,14%)
+
+!ENTRY org.eclipse.help 4 0 2017-11-25 10:43:23.387
+!MESSAGE Error reading help table of contents file /"com.qnx.doc.copyright/copyright_hierarchy.xml" (skipping file)
+!STACK 0
+java.io.FileNotFoundException
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:49)
+	at org.eclipse.help.internal.toc.TocFileProvider.getTocContributions(TocFileProvider.java:45)
+	at org.eclipse.help.internal.toc.TocManager.getAndCacheTocContributions(TocManager.java:211)
+	at org.eclipse.help.internal.toc.TocManager.getTocContributionsForToc(TocManager.java:199)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:307)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.internal.toc.TocManager.getTopic(TocManager.java:123)
+	at org.eclipse.help.internal.toc.TocManager.getTopicPath(TocManager.java:138)
+	at org.eclipse.help.internal.webapp.data.UrlUtil.getTopicPath(UrlUtil.java:237)
+	at org.eclipse.help.internal.webapp.servlet.BreadcrumbsFilter.filter(BreadcrumbsFilter.java:78)
+	at org.eclipse.help.internal.webapp.servlet.EclipseConnector.transfer(EclipseConnector.java:196)
+	at org.eclipse.help.internal.webapp.servlet.ContentServlet.doGet(ContentServlet.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180)
+	at org.eclipse.equinox.http.servlet.internal.HttpServiceRuntimeImpl$LegacyServlet.service(HttpServiceRuntimeImpl.java:1221)
+	at org.eclipse.equinox.http.servlet.internal.registration.EndpointRegistration.service(EndpointRegistration.java:153)
+	at org.eclipse.equinox.http.servlet.internal.servlet.ResponseStateHandler.processRequest(ResponseStateHandler.java:62)
+	at org.eclipse.equinox.http.servlet.internal.context.DispatchTargets.doDispatch(DispatchTargets.java:132)
+	at org.eclipse.equinox.http.servlet.internal.servlet.ProxyServlet.service(ProxyServlet.java:100)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:310)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:845)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:583)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1174)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1106)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:524)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+!SESSION 2017-12-09 08:44:20.422 -----------------------------------------------
+eclipse.buildId=7.0.0
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:44:55.792
+!MESSAGE Enablement expression is missing for config provider for com.qnx.tools.ide.qde.core.recursiveMkProject
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:44:55.902
+!MESSAGE Enablement expression is missing for config provider for com.qnx.tools.ide.qde.debug.core.descriptorType.default
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:44:55.902
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:44:55.902
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:44:55.902
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.resources 4 372 2017-12-09 08:45:00.980
+!MESSAGE Resource '/1' is not open.
+
+!ENTRY com.qnx.tools.ide.capabilities.ui 4 0 2017-12-09 08:45:31.030
+!MESSAGE activityProfiles.activityRequirementBinding: Invalid activityId com.qnx.tools.ide.capabilities.ui.activity.qnxSystemDeveloper
+
+!ENTRY com.qnx.tools.ide.capabilities.ui 4 0 2017-12-09 08:45:31.109
+!MESSAGE activityProfiles.activityRequirementBinding: Invalid requiredActivityId com.qnx.tools.ide.capabilities.ui.activity.qnxDeveloper
+!SESSION 2017-12-09 08:48:02.278 -----------------------------------------------
+eclipse.buildId=7.0.0
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:48:12.352
+!MESSAGE Enablement expression is missing for config provider for com.qnx.tools.ide.qde.core.recursiveMkProject
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:48:12.367
+!MESSAGE Enablement expression is missing for config provider for com.qnx.tools.ide.qde.debug.core.descriptorType.default
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:48:12.367
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:48:12.367
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-09 08:48:12.367
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.resources 4 372 2017-12-09 08:48:12.805
+!MESSAGE Resource '/1' is not open.
+
+!ENTRY com.qnx.tools.ide.capabilities.ui 4 0 2017-12-09 08:48:16.001
+!MESSAGE activityProfiles.activityRequirementBinding: Invalid activityId com.qnx.tools.ide.capabilities.ui.activity.qnxSystemDeveloper
+
+!ENTRY com.qnx.tools.ide.capabilities.ui 4 0 2017-12-09 08:48:16.016
+!MESSAGE activityProfiles.activityRequirementBinding: Invalid requiredActivityId com.qnx.tools.ide.capabilities.ui.activity.qnxDeveloper

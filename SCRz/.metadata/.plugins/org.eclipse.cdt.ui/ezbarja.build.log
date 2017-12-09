@@ -1,0 +1,17 @@
+09:07:40 **** Incremental Build of configuration x86_64-debug for project ezbarja ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/ezbarja.d,-MT,build/x86_64-debug/src/ezbarja.o -o build/x86_64-debug/src/ezbarja.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/ezbarja.c
+src/ezbarja.c: In function 'main':
+src/ezbarja.c:37:3: warning: implicit declaration of function 'sigemptyse' [-Wimplicit-function-declaration]
+   sigemptyse(&set);
+   ^
+src/ezbarja.c:38:18: error: 'SIGTMIN' undeclared (first use in this function)
+   sigaddset(&set,SIGTMIN);
+                  ^
+src/ezbarja.c:38:18: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/ezbarja.o' failed
+make: *** [build/x86_64-debug/src/ezbarja.o] Error 1
+
+09:07:41 Build Finished (took 531ms)
+
