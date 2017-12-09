@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+
+int main(void) {
+	int pid = 303115;
+	int signal=41;
+	union sigval value;
+
+	value.sival_int = 234;
+
+	sigqueue(getpid(),SIGRTMIN,value); //wysylanie sygnalu
+
+	return EXIT_SUCCESS;
+}

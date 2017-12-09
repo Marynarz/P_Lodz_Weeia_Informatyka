@@ -802,3 +802,159 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.qnx.tools.ide.capabilities.ui 4 0 2017-12-09 08:48:16.016
 !MESSAGE activityProfiles.activityRequirementBinding: Invalid requiredActivityId com.qnx.tools.ide.capabilities.ui.activity.qnxDeveloper
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-12-09 09:37:13.055
+!MESSAGE Indexed '1_kill' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-12-09 09:37:57.401
+!MESSAGE Indexed '1_kill' (1 sources, 16 headers) in 0,141 sec: 1 161 declarations; 1 067 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.qnx.tools.ide.qde.core 4 4 2017-12-09 09:44:24.646
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Program file does not exist
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.throwException(GdbLaunch.java:865)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:838)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getProgramPath(QDELaunch.java:629)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getLocalExecutablePath(QDELaunch.java:331)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.setProgramPath(QDELaunchConfigurationDelegate.java:211)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.autocomplete(QDELaunchConfigurationDelegate.java:185)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.launch(QDELaunchConfigurationDelegate.java:125)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:839)
+	... 10 more
+Contains: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+java.io.FileNotFoundException: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:839)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getProgramPath(QDELaunch.java:629)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getLocalExecutablePath(QDELaunch.java:331)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.setProgramPath(QDELaunchConfigurationDelegate.java:211)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.autocomplete(QDELaunchConfigurationDelegate.java:185)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.launch(QDELaunchConfigurationDelegate.java:125)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2017-12-09 09:44:24.646
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:839)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getProgramPath(QDELaunch.java:629)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getLocalExecutablePath(QDELaunch.java:331)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.setProgramPath(QDELaunchConfigurationDelegate.java:211)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.autocomplete(QDELaunchConfigurationDelegate.java:185)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.launch(QDELaunchConfigurationDelegate.java:125)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 104 2017-12-09 09:44:24.646
+!MESSAGE C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:839)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getProgramPath(QDELaunch.java:629)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getLocalExecutablePath(QDELaunch.java:331)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.setProgramPath(QDELaunchConfigurationDelegate.java:211)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.autocomplete(QDELaunchConfigurationDelegate.java:185)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.launch(QDELaunchConfigurationDelegate.java:125)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.qnx.tools.ide.qde.core 4 4 2017-12-09 09:44:24.661
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Program file does not exist
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.throwException(GdbLaunch.java:865)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:838)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getProgramPath(QDELaunch.java:629)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getLocalExecutablePath(QDELaunch.java:331)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.verifyBinary(QDELaunchConfigurationDelegate.java:217)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.setProgramPath(QDELaunchConfigurationDelegate.java:213)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.autocomplete(QDELaunchConfigurationDelegate.java:185)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.launch(QDELaunchConfigurationDelegate.java:125)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:839)
+	... 11 more
+Contains: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+java.io.FileNotFoundException: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:839)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getProgramPath(QDELaunch.java:629)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getLocalExecutablePath(QDELaunch.java:331)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.verifyBinary(QDELaunchConfigurationDelegate.java:217)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.setProgramPath(QDELaunchConfigurationDelegate.java:213)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.autocomplete(QDELaunchConfigurationDelegate.java:185)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.launch(QDELaunchConfigurationDelegate.java:125)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2017-12-09 09:44:24.661
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:839)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getProgramPath(QDELaunch.java:629)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getLocalExecutablePath(QDELaunch.java:331)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.verifyBinary(QDELaunchConfigurationDelegate.java:217)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.setProgramPath(QDELaunchConfigurationDelegate.java:213)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.autocomplete(QDELaunchConfigurationDelegate.java:185)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.launch(QDELaunchConfigurationDelegate.java:125)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 104 2017-12-09 09:44:24.661
+!MESSAGE C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\student\P_Lodz_Weeia_Informatyka\SCRz\1_kill\build\x86_64-debug\1_kill not found
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getProgramPath(GdbLaunch.java:839)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getProgramPath(QDELaunch.java:629)
+	at com.qnx.tools.ide.qde.debug.internal.core.dsf.QDELaunch.getLocalExecutablePath(QDELaunch.java:331)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.verifyBinary(QDELaunchConfigurationDelegate.java:217)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.setProgramPath(QDELaunchConfigurationDelegate.java:213)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.autocomplete(QDELaunchConfigurationDelegate.java:185)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.launch(QDELaunchConfigurationDelegate.java:125)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.qnx.tools.ide.qde.debug.ui 4 -1 2017-12-09 09:44:24.677
+!MESSAGE Program path does not exist
+!STACK 1
+org.eclipse.core.runtime.CoreException: Program path does not exist
+	at com.qnx.tools.ide.qde.debug.core.QDELaunchUtils.coreException(QDELaunchUtils.java:1075)
+	at com.qnx.tools.ide.qde.debug.core.QDELaunchUtils.verifyProgramPath(QDELaunchUtils.java:1087)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.verifyBinary(QDELaunchConfigurationDelegate.java:217)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.setProgramPath(QDELaunchConfigurationDelegate.java:213)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.autocomplete(QDELaunchConfigurationDelegate.java:185)
+	at com.qnx.tools.ide.qde.internal.ui.launch.dsf.QDELaunchConfigurationDelegate.launch(QDELaunchConfigurationDelegate.java:125)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.qnx.tools.ide.qde.core 4 0 2017-12-09 09:44:24.677
+!MESSAGE Program path does not exist
+!SUBENTRY 1 com.qnx.tools.ide.qde.core 4 0 2017-12-09 09:44:24.677
+!MESSAGE Program path does not exist

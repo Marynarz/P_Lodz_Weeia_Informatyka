@@ -21,7 +21,7 @@ void* function( void* arg)
 	while (1)
 	{
 		sigwaitinfo(&set, &info);
-		printf("Odebrano! Sygnal nr: %d\n",++counter);
+		printf("Odebrano! Sygnal nr: %d, z danymi: %d\n",++counter,info.__data.__proc.__pdata.__kill.__value.sival_int);
 	}
 
 	return 0;
@@ -39,18 +39,20 @@ int main(void) {
 	pthread_t tid1, tid2;
 	//pthread_attr_t attr;
 	sigset_t set;
+
 	union sigval value;
+	value.sival_int=0;
 
 	sigfillset(&set); //blokowanie sygnalow
 	pthread_sigmask( SIG_BLOCK, &set, NULL);
-
 
 	pthread_create( &tid1, NULL, &function, NULL ); //utworzenie watku
 	//pthread_create( &tid2, NULL, &function2, NULL);
 	while(1)
 	{
 			sleep(5);
-			sigqueue(getpid(),SIGRTMIN,value);
+			value.sival_int++;
+			sigqueue(getpid(),SIGRTMIN,value); //wysylanie sygnalu
 	}
 
 

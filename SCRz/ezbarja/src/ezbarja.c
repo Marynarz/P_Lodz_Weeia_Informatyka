@@ -37,7 +37,7 @@
 		sigemptyse(&set);
 		sigaddset(&set,SIGTMIN);
 
-
+		call_me(ewojnie);
 
 	   sigqueue(getpid(),41,value);
 	   sleep(5);
