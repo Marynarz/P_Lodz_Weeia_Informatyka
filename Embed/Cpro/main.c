@@ -56,14 +56,14 @@ void wyswietlaczCzesc(bool ktora)
 }
 
 void cyfry(short cyfra,bool strona){
-	//clearLED(); 
+	czyszczenie(); 
 	wyswietlaczCzesc(strona);
 	switch(cyfra)
 	{
 		case 0: *PIOB_SODR = A|B|C|D|E|F; break;
 		case 1: *PIOB_SODR = B|C; 		  break;
 		case 2: *PIOB_SODR = A|B|G|E|D;   break;
-		case 3: *PIOB_SODR = A|B|C|D|G;   break; ///dokonczyc
+		case 3: *PIOB_SODR = A|B|C|D|G;   break; 
 		case 4: *PIOB_SODR = B|C|G|F; 	  break;
 		case 5: *PIOB_SODR = A|C|D|F|G;   break;
 		case 6: *PIOB_SODR = A|C|D|E|F|G; break;
@@ -71,6 +71,9 @@ void cyfry(short cyfra,bool strona){
 		case 8: *PIOB_SODR = A|B|C|D|E|F|G; break;
 		case 9: *PIOB_SODR = A|B|C|D|F|G; break;
 	}
+}
+void czyszczenie(void){
+	*PIOB_CODR = A|B|C|D|E|F|G|DOT;
 }
 
 int main(void)

@@ -41,7 +41,6 @@ void initPiob()
   *PIOB_OER = Q1|Q2|Q3|A|B|C|D|E|F|G|DOT;
   *PIOB_CODR= Q1|Q2;
 }
-}
 void wyswietlaczCzesc(bool ktora)
 {
   if(ktora)	//true to lewa
