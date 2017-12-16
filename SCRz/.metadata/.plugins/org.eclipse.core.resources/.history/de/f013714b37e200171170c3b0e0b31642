@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <ctype.h>
+#include <sys/wait.h>
+
+int main(void) {
+	pid_t pid;
+	pid_t wpid;
+	int status;
+	int channelId;
+
+	if((channelId = ChannelCreate())==-1)
+	{
+		perror("ChannelCreate");
+		return EXIT_FAILURE;
+	}
+
+	if((pid = fork())==-1)	//tworzenie rozdzialu na dwa procesy
+	{
+		perror("fork");
+		return EXIT_FAILURE;
+	}
+
+	if(pid ==0)		//obsluga procesu potomnego
+	{
+		printf("Witam w kliencie!\n");
+	}
+	else			//obsluyga procesu macierzystego
+	{
+		printf("Witam w hoscie!\n PID: %d\n",pid);
+	      do {
+	        wpid = waitpid( pid, &status, 0 );
+	      } while( WIFEXITED( status ) == 0 );
+	      //printf(status);
+	      if((int channelS = ChannelDestroy(channelId))=-1)
+	      {
+	  		perror("ChannelDestroy");
+	  		return EXIT_FAILURE;
+	      }
+	      return WEXITSTATUS( status );
+	}
+	return EXIT_SUCCESS;
+}
