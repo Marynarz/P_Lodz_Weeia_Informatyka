@@ -44,7 +44,7 @@ void* function2( void* arg)
 
 	while (1)
 	{
-		sigwaitinfo(&set, &info); /// set to numer sygnalu, info
+		sigwaitinfo(&set, &info);
 		printf("Odebrano! Sygnal w kolejnosci: %d, NR sygnalu: %d,z danymi: %d\n",++counter,info.si_code,info.__data.__proc.__pdata.__kill.__value.sival_int);
 	}
 
@@ -64,12 +64,12 @@ int main(void) {
 
 	pthread_create( &tid1, NULL, &function, NULL ); //utworzenie watku
 	pthread_create( &tid2, NULL, &function2, NULL);
-	while(1)
+	/*while(1)
 	{
 			sleep(5);
-			value.sival_int+=10;
+			value.sival_int++;
 			sigqueue(getpid(),SIGRTMIN,value); //wysylanie sygnalu
-	}
+	}*/
 
 
 	pthread_join(tid1,NULL); //zablokowanie programu do czasu wykonania watku tid

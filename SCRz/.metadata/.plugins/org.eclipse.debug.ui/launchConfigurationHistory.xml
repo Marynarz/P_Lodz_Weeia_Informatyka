@@ -4,8 +4,6 @@
 <mruHistory>
 <launch memento=""/>
 <launch memento=""/>
-<launch memento=""/>
-<launch memento=""/>
 </mruHistory>
 <favorites/>
 </launchGroup>
@@ -13,15 +11,11 @@
 <mruHistory>
 <launch memento=""/>
 <launch memento=""/>
-<launch memento=""/>
-<launch memento=""/>
 </mruHistory>
 <favorites/>
 </launchGroup>
 <launchGroup id="org.eclipse.debug.ui.launchGroup.profile">
 <mruHistory>
-<launch memento=""/>
-<launch memento=""/>
 <launch memento=""/>
 <launch memento=""/>
 </mruHistory>
@@ -39,8 +33,6 @@
 <mruHistory>
 <launch memento=""/>
 <launch memento=""/>
-<launch memento=""/>
-<launch memento=""/>
 </mruHistory>
 <favorites/>
 </launchGroup>
@@ -52,8 +44,6 @@
 <mruHistory>
 <launch memento=""/>
 <launch memento=""/>
-<launch memento=""/>
-<launch memento=""/>
 </mruHistory>
 <favorites/>
 </launchGroup>
@@ -61,15 +51,11 @@
 <mruHistory>
 <launch memento=""/>
 <launch memento=""/>
-<launch memento=""/>
-<launch memento=""/>
 </mruHistory>
 <favorites/>
 </launchGroup>
 <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
 <mruHistory>
-<launch memento=""/>
-<launch memento=""/>
 <launch memento=""/>
 <launch memento=""/>
 </mruHistory>
