@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <ctype.h>
+#include <sys/wait.h>
+
+int main(void) {
+	pid_t pid;
+	pid_t wpid;
+	int status;
+
+	if((pid = fork())==-1)
+	{
+		perror("fork");
+		return EXIT_FAILURE;
+	}
+
+	if(pid ==0)
+	{
+		printf("Witam w kliencie!\n");
+	}
+	else
+	{
+		printf("Witam w hoscie!\n PID: %d\n",pid);
+	      do {
+	        wpid = waitpid( pid, &status, 0 );
+	      } while( WIFEXITED( status ) == 0 );
+	      return WEXITSTATUS( status );
+	}
+	return EXIT_SUCCESS;
+}

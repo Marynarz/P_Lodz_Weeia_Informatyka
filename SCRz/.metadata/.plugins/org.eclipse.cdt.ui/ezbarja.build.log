@@ -1,0 +1,6 @@
+11:09:03 **** Incremental Build of configuration x86_64-debug for project ezbarja ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+11:09:03 Build Finished (took 94ms)
+
