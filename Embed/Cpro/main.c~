@@ -79,7 +79,7 @@ void cyfry(short cyfra,int strona){
 	}
 }
 void zegar() {
-	*PIT_MR = 1<<24|0xB0000;
+	*PIT_MR = 1<<24|0xA0000;
 }
 
 int main(void)
@@ -105,7 +105,9 @@ int main(void)
 				if((*PIOC_PDSR&(1<<5))!=(1<<5)) i==0 ? i=99 : --i;
 				else i==100 ? i=0 : ++i;
 				counter = 0;
-			} else {
+			} 
+			else 
+			{
 				++counter;
 			}
 			

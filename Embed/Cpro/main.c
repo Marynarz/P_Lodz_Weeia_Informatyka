@@ -100,12 +100,14 @@ int main(void)
 
 		if((*PIT_SR&(1<<0))==1)
 		{
-			if(counter==8)
+			if(counter==5)
 			{
 				if((*PIOC_PDSR&(1<<5))!=(1<<5)) i==0 ? i=99 : --i;
 				else i==100 ? i=0 : ++i;
 				counter = 0;
-			} else {
+			} 
+			else 
+			{
 				++counter;
 			}
 			
