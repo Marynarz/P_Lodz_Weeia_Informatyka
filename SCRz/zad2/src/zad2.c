@@ -6,6 +6,7 @@
 #include <ctype.h>
 #include <sys/wait.h>
 #include <sys/neutrino.h>
+#include <sys/netmgr.h>
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <string.h>
@@ -69,23 +70,27 @@ int main(void) {
 	    }
 	    printf( "Map addr is 0x%08x\n", addr );
 	    //*addr = randomizer();
-	    *addr = 1;
-		int connection = ConnectAttach(0,getpid(),channelId,0,NULL); //tworzymy polaczenie
+	    char msg[20] = "Polaczenie udane";
+	    char rmsg[20] ="";
+		int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
 
 		printf("Polaczenie \n");
-		long wiadomosc = MsgSend(connection,addr,strlen(addr)+1,rmsg,sizeof(rmsg));
+		int wiadomosc = MsgSend(connection,msg,20,rmsg,20);
 		//sleep(30);
-
+		printf("Rmsg: %s\n",rmsg);
 		ConnectDetach(connection);		//koniec polaczenia
 		close(fd);
-		shm_unlink("liczby");	//usuwanie obiektu pamieci dzielonej
+		shm_unlink("liczby\n");	//usuwanie obiektu pamieci dzielonej
 		return EXIT_SUCCESS;
 	}
 	else			//obsluyga procesu macierzystego
 	{
 		printf("Witam w hoscie!\n PID: %d\n",pid);
-		long odebrane = MsgReceive(channelId,addr,sizeof(addr)+1,NULL);
-		printf(MsgRead(odebrane,addr,sizeof(addr)+1,0));
+		char msg[20] = "";
+		char rmsg[20] ="Reply Text Message";
+		int odebrane = MsgReceive(channelId,msg,20,NULL);
+		printf("Server: Text received: %s\n",msg);
+		MsgReply(odebrane,0,rmsg,20);
 	      do {
 	        wpid = waitpid( pid, &status, 0 );
 	      } while( WIFEXITED( status ) == 0 ); //oczekiwanie na zamkniecie klienta
