@@ -858,3 +858,51 @@ src/zad2.c:87:19: warning: 'addr' may be used uninitialized in this function [-W
    long odebrane = MsgReceive(channelId,addr,sizeof(addr)+1,NULL);
                    ^
 qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+10:28:49 **** Build of configuration x86_64-debug for project Zad2_ezbarja ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/Zad2_ezbarja.d,-MT,build/x86_64-debug/src/Zad2_ezbarja.o -o build/x86_64-debug/src/Zad2_ezbarja.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/Zad2_ezbarja.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/Zad2_ezbarja   build/x86_64-debug/src/Zad2_ezbarja.o  
+10:32:16 **** Incremental Build of configuration x86_64-debug for project Zad2_ezbarja ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/Zad2_ezbarja.d,-MT,build/x86_64-debug/src/Zad2_ezbarja.o -o build/x86_64-debug/src/Zad2_ezbarja.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/Zad2_ezbarja.c
+src/Zad2_ezbarja.c: In function 'main':
+src/Zad2_ezbarja.c:17:11: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+     pid_t wpid;
+           ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/Zad2_ezbarja   build/x86_64-debug/src/Zad2_ezbarja.o  
+10:36:44 **** Incremental Build of configuration x86_64-debug for project Zad2_ezbarja ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/Zad2_ezbarja.d,-MT,build/x86_64-debug/src/Zad2_ezbarja.o -o build/x86_64-debug/src/Zad2_ezbarja.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/Zad2_ezbarja.c
+src/Zad2_ezbarja.c: In function 'main':
+src/Zad2_ezbarja.c:17:11: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+     pid_t wpid;
+           ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/Zad2_ezbarja   build/x86_64-debug/src/Zad2_ezbarja.o  
+10:44:06 **** Incremental Build of configuration x86_64-debug for project Zad2_ezbarja ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/Zad2_ezbarja.d,-MT,build/x86_64-debug/src/Zad2_ezbarja.o -o build/x86_64-debug/src/Zad2_ezbarja.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/Zad2_ezbarja.c
+src/Zad2_ezbarja.c: In function 'main':
+src/Zad2_ezbarja.c:38:7: error: 'System' undeclared (first use in this function)
+       System.out.println("Proces child");
+       ^
+src/Zad2_ezbarja.c:38:7: note: each undeclared identifier is reported only once for each function it appears in
+src/Zad2_ezbarja.c:17:11: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+     pid_t wpid;
+           ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/Zad2_ezbarja.o' failed
+make: *** [build/x86_64-debug/src/Zad2_ezbarja.o] Error 1
+10:44:56 **** Incremental Build of configuration x86_64-debug for project Zad2_ezbarja ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/Zad2_ezbarja.d,-MT,build/x86_64-debug/src/Zad2_ezbarja.o -o build/x86_64-debug/src/Zad2_ezbarja.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/Zad2_ezbarja.c
+src/Zad2_ezbarja.c: In function 'main':
+src/Zad2_ezbarja.c:17:11: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+     pid_t wpid;
+           ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/Zad2_ezbarja   build/x86_64-debug/src/Zad2_ezbarja.o  
+10:45:11 **** Incremental Build of configuration x86_64-debug for project Zad2_ezbarja ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+10:45:14 **** Incremental Build of configuration x86_64-debug for project Zad2_ezbarja ****
+make -j4 all 
+make: Nothing to be done for 'all'.
