@@ -1389,3 +1389,876 @@ src/zad2.c:28:8: warning: variable 'wpid' set but not used [-Wunused-but-set-var
   pid_t wpid;
         ^
 qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:21:54 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:36:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:77:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:80:7: warning: unused variable 'wiadomosc' [-Wunused-variable]
+   int wiadomosc = MsgSend(connection,msg,20,rmsg,20);
+       ^
+src/zad2.c:29:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:23:09 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:36:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:77:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      addr =666;
+           ^
+src/zad2.c:78:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:81:7: warning: unused variable 'wiadomosc' [-Wunused-variable]
+   int wiadomosc = MsgSend(connection,msg,20,rmsg,20);
+       ^
+src/zad2.c:29:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:23:23 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:36:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:77:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      addr =666;
+           ^
+src/zad2.c:78:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:81:7: warning: unused variable 'wiadomosc' [-Wunused-variable]
+   int wiadomosc = MsgSend(connection,msg,20,rmsg,20);
+       ^
+src/zad2.c:29:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:24:58 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:25:07 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:26:23 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:27:53 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:28:00 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:28:53 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:29:26 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+09:30:08 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:30:16 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+09:30:31 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:30:48 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:28:11: error: 'LSIZE' undeclared here (not in a function)
+  char buf[LSIZE];
+           ^
+src/zad2.c:32:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+09:31:21 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c:33:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main(void) {
+ ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:31:35 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:42:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:85:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:88:7: warning: unused variable 'wiadomosc' [-Wunused-variable]
+   int wiadomosc = MsgSend(connection,msg,20,rmsg,20);
+       ^
+src/zad2.c:35:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:31:44 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:42:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:85:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:88:7: warning: unused variable 'wiadomosc' [-Wunused-variable]
+   int wiadomosc = MsgSend(connection,msg,20,rmsg,20);
+       ^
+src/zad2.c:35:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:31:53 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:42:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:85:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:88:7: warning: unused variable 'wiadomosc' [-Wunused-variable]
+   int wiadomosc = MsgSend(connection,msg,20,rmsg,20);
+       ^
+src/zad2.c:35:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:32:15 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:42:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:85:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:88:7: warning: unused variable 'wiadomosc' [-Wunused-variable]
+   int wiadomosc = MsgSend(connection,msg,20,rmsg,20);
+       ^
+src/zad2.c:35:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:34:49 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:42:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:85:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:35:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:35:29 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:42:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:85:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:35:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:45:58 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'if'
+  if((channelId = ChannelCreate(NULL))==-1)
+  ^
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:57:26: error: 'addr' undeclared (first use in this function)
+  if(ftruncate(fd,sizeof(*addr))==-1)
+                          ^
+src/zad2.c:57:26: note: each undeclared identifier is reported only once for each function it appears in
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+09:46:07 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'if'
+  if((channelId = ChannelCreate(NULL))==-1)
+  ^
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:57:26: error: 'addr' undeclared (first use in this function)
+  if(ftruncate(fd,sizeof(*addr))==-1)
+                          ^
+src/zad2.c:57:26: note: each undeclared identifier is reported only once for each function it appears in
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:46:13 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'if'
+  if((channelId = ChannelCreate(NULL))==-1)
+  ^
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:57:26: error: 'addr' undeclared (first use in this function)
+  if(ftruncate(fd,sizeof(*addr))==-1)
+                          ^
+src/zad2.c:57:26: note: each undeclared identifier is reported only once for each function it appears in
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:47:01 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'if'
+  if((channelId = ChannelCreate(NULL))==-1)
+  ^
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:57:25: error: 'addr' undeclared (first use in this function)
+  if(ftruncate(fd,sizeof(addr))==-1)
+                         ^
+src/zad2.c:57:25: note: each undeclared identifier is reported only once for each function it appears in
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+cc: C:/QNXSDP/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/zad2.o' failed
+make: *** [build/x86_64-debug/src/zad2.o] Error 1
+09:47:14 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:47:24 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:48:24 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:48:32 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:48:41 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:48:50 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:48:55 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+09:48:56 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+09:49:03 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:49:09 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:52:37 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:52:41 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+09:54:12 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:54:19 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:54:30 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:54:39 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:54:50 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:54:55 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:55:00 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+09:55:09 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
+src/zad2.c: In function 'main':
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+  if((channelId = ChannelCreate(NULL))==-1)
+                                ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
+ extern int ChannelCreate(unsigned __flags);
+            ^
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+   int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
+                                                          ^
+In file included from src/zad2.c:8:0:
+C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
+ extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
+            ^
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+  pid_t wpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  

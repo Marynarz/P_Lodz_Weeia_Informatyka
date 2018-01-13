@@ -1,36 +1,25 @@
-09:04:20 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+09:55:09 **** Incremental Build of configuration x86_64-debug for project zad2 ****
 make -j4 all 
 qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
-src/zad2.c: In function 'randomizer':
-src/zad2.c:24:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
-  return tab;
-         ^
-src/zad2.c:24:9: warning: function returns address of local variable [-Wreturn-local-addr]
 src/zad2.c: In function 'main':
-src/zad2.c:36:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
+src/zad2.c:38:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
   if((channelId = ChannelCreate(NULL))==-1)
                                 ^
 In file included from src/zad2.c:8:0:
 C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
  extern int ChannelCreate(unsigned __flags);
             ^
-src/zad2.c:75:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
+src/zad2.c:79:58: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
    int connection = ConnectAttach(0,getppid(),channelId,0,NULL); //tworzymy polaczenie
                                                           ^
 In file included from src/zad2.c:8:0:
 C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
  extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
             ^
-src/zad2.c:78:7: warning: unused variable 'wiadomosc' [-Wunused-variable]
-   int wiadomosc = MsgSend(connection,msg,20,rmsg,20);
-       ^
-src/zad2.c:34:7: warning: unused variable 'rmsg' [-Wunused-variable]
-  char rmsg[1000];
-       ^
-src/zad2.c:28:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
+src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
   pid_t wpid;
         ^
 qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
 
-09:04:20 Build Finished (took 156ms)
+09:55:09 Build Finished (took 157ms)
 
