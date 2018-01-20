@@ -1,50 +1,6 @@
-09:55:35 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+10:55:13 **** Incremental Build of configuration x86_64-debug for project zad2 ****
 make -j4 all 
-qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/zad2.d,-MT,build/x86_64-debug/src/zad2.o -o build/x86_64-debug/src/zad2.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/zad2.c
-src/zad2.c: In function 'randomizer':
-src/zad2.c:23:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
-  return tab;
-         ^
-src/zad2.c:23:9: warning: function returns address of local variable [-Wreturn-local-addr]
-src/zad2.c: In function 'main':
-src/zad2.c:35:32: warning: passing argument 1 of 'ChannelCreate' makes integer from pointer without a cast [-Wint-conversion]
-  if((channelId = ChannelCreate(NULL))==-1)
-                                ^
-In file included from src/zad2.c:8:0:
-C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:716:12: note: expected 'unsigned int' but argument is of type 'void *'
- extern int ChannelCreate(unsigned __flags);
-            ^
-src/zad2.c:73:57: warning: passing argument 5 of 'ConnectAttach' makes integer from pointer without a cast [-Wint-conversion]
-   int connection = ConnectAttach(0,getpid(),channelId,0,NULL); //tworzymy polaczenie
-                                                         ^
-In file included from src/zad2.c:8:0:
-C:/QNXSDP/target/qnx7/usr/include/sys/neutrino.h:721:12: note: expected 'int' but argument is of type 'void *'
- extern int ConnectAttach(_Uint32t __nd, pid_t __pid, int __chid, unsigned __index, int __flags);
-            ^
-src/zad2.c:76:51: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
-   long wiadomosc = MsgSend(connection,addr,strlen(addr)+1,rmsg,sizeof(rmsg));
-                                                   ^
-In file included from src/zad2.c:11:0:
-C:/QNXSDP/target/qnx7/usr/include/string.h:80:15: note: expected 'const char *' but argument is of type 'unsigned int *'
- extern size_t strlen(const char *__s);
-               ^
-src/zad2.c:76:8: warning: unused variable 'wiadomosc' [-Wunused-variable]
-   long wiadomosc = MsgSend(connection,addr,strlen(addr)+1,rmsg,sizeof(rmsg));
-        ^
-src/zad2.c:88:10: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
-   printf(MsgRead(odebrane,addr,sizeof(addr)+1,0));
-          ^
-In file included from src/zad2.c:1:0:
-C:/QNXSDP/target/qnx7/usr/include/stdio.h:176:12: note: expected 'const char *' but argument is of type 'ssize_t {aka long int}'
- extern int printf(const char *__format, ...);
-            ^
-src/zad2.c:27:8: warning: variable 'wpid' set but not used [-Wunused-but-set-variable]
-  pid_t wpid;
-        ^
-src/zad2.c:87:19: warning: 'addr' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   long odebrane = MsgReceive(channelId,addr,sizeof(addr)+1,NULL);
-                   ^
-qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+make: Nothing to be done for 'all'.
 
-09:55:36 Build Finished (took 203ms)
+10:55:14 Build Finished (took 125ms)
 

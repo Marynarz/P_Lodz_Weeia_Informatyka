@@ -4,8 +4,8 @@
 		<item value="com.qnx.tools.ide.target.qconn.ui.NewQNXTarget2" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="-1" key="dialogHeight"/>
-		<item value="-1" key="dialogWidth"/>
+		<item value="250" key="dialogHeight"/>
+		<item value="350" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
