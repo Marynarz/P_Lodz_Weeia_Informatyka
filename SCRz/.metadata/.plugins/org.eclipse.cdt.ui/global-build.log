@@ -2262,3 +2262,12 @@ src/zad2.c:31:8: warning: variable 'wpid' set but not used [-Wunused-but-set-var
   pid_t wpid;
         ^
 qcc -Vgcc_ntox86_64 -o build/x86_64-debug/zad2   build/x86_64-debug/src/zad2.o  
+10:21:23 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+10:48:30 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+10:55:13 **** Incremental Build of configuration x86_64-debug for project zad2 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
