@@ -53,7 +53,7 @@ def main():
     elif o in ("-t","--target"):
       target = a
     elif o in ("-p","--port"):
-      port = inta(a)
+      port = int(a)
     else:
       assert False,"blad!"
       
