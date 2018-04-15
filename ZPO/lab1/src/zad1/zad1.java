@@ -9,6 +9,7 @@ public class zad1 {
 		System.out.println(Calc.getOct());
 		System.out.println(Calc.getDec());
 		System.out.println(Calc.getHex());
+		System.out.println(Calc.getThr());
 	}
 
 }

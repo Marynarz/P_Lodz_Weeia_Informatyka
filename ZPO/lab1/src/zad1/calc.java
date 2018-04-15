@@ -1,6 +1,7 @@
 package zad1;
 
 public class calc {
+	
 	private int numb;
 	public calc(String Numb){
 		this.numb = Integer.parseInt(Numb, 2);
@@ -18,6 +19,14 @@ public class calc {
 		return Integer.toBinaryString(this.numb);
 	}
 	public String getThr(){
-		return null; //todo
+		int tempN = this.numb;
+		String tempS = "";
+		while(tempN!=0){
+			tempS += Integer.toString(tempN%3);
+			tempN /=3;
+		}
+		tempS = new StringBuffer(tempS).reverse().toString();
+		tempN = Integer.parseInt(tempS);
+		return Integer.toString(tempN); //todo
 	}
 }
