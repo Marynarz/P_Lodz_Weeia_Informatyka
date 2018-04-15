@@ -1,0 +1,18 @@
+package zad2;
+
+import java.math.BigInteger;
+
+public class NrbVal {
+	private boolean validDat;
+	private BigInteger nrbBI;
+	public NrbVal(String nrbNumb){
+		this.nrbBI = new BigInteger(nrbNumb);
+		this.valDat();
+	}
+	private void valDat(){
+		this.nrbBI.shiftLeft(12);
+	}
+	public BigInteger getBi(){
+		return this.nrbBI;
+	}
+}

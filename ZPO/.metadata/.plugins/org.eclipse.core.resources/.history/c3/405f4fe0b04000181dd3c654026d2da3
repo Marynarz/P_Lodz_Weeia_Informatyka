@@ -1,0 +1,11 @@
+package zad2;
+
+public class zad2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		NrbVal nrb = new NrbVal("123456789");
+		System.out.println(nrb.getBi());
+	}
+
+}
