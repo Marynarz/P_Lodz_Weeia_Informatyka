@@ -1,0 +1,9 @@
+package zad3;
+
+import java.util.HashMap;
+
+public class Transl {
+	public Transl(String val){
+		HashMap<Integer,String> transDict = new
+	}
+}

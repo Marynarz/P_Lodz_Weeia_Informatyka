@@ -1,0 +1,38 @@
+package zad3;
+
+import java.util.HashMap;
+
+public class zad3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer,String> transDic = new HashMap<Integer,String>() 
+		{{
+			put(1,"jeden");
+			put(2,"dwa");
+			put(3,"trzy");
+			put(4,"cztery");
+			put(5,"piec");
+			put(6,"szesc");
+			put(7,"siedem");
+			put(8,"osiem");
+			put(9,"dziewiec");
+			put(0,"zero");
+			put(11,"jedenascie");
+			put(12,"dwanascie");
+		}};
+		System.out.println(transDic);
+		/*transDic.put(1, "jeden");
+		transDic.put(2, "jeden");
+		transDic.put(3, "jeden");
+		transDic.put(4, "jeden");
+		transDic.put(5, "jeden");
+		transDic.put(6, "jeden");
+		transDic.put(7, "jeden");
+		transDic.put(8, "jeden");
+		transDic.put(9, "jeden");
+		transDic.put(10, "jeden");
+*/
+	}
+
+}
