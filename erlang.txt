@@ -1,0 +1,15 @@
+. <- musi bycna koniec
+
+q() <- wyjście
+b() <- printuje zmienna
+f() <- usuwa zmienne, dziala tylko w shellu
+c(File) <- kompilacja
+
+=:= <- porównanie dokładne (typu i wartości)
+
+Excercise 1.
+16> Wynik = [{A,B,C} || A<-L , B<-L , C<-L, A+B+C =< 30, A*A + B*B ==C*C]. 
+[{3,4,5},{4,3,5},{5,12,13},{6,8,10},{8,6,10},{12,5,13}]
+
+
+ cd("C:/Users/ewojnie/Desktop").
