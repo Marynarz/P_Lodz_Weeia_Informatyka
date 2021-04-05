@@ -1,0 +1,20 @@
+CREATE TYPE wypozyczenia_type as object (
+   dataWypozyczenia       TIMESTAMP,
+   zwrotPrzed             TIMESTAMP,
+   dataZwrotu             TIMESTAMP
+);
+
+CREATE TYPE czytelnicy_type as object (
+    NrKarty               NUMBER(5).
+    Nazwisko              VARCHAR(50),
+    Imie                  VARCHAR(50),
+    IdDokumentu           VARCHAR(20),
+    NrDokumentu           VARCHAR(20),
+    DataUr                DATE,
+    MiejsceUr             VARCHAR(50),
+    Kod                   NUMBER(5),
+    Miasto                VARCHAR(50),
+    IdUlicy               NUMBER(5),
+    Ulica                 VARCHAR(50),
+    Telefon               NUMBER(11)
+)
