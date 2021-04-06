@@ -1,7 +1,9 @@
 CREATE TYPE wypozyczenia_type as object (
    dataWypozyczenia       TIMESTAMP,
    zwrotPrzed             TIMESTAMP,
-   dataZwrotu             TIMESTAMP
+   dataZwrotu             TIMESTAMP,
+   MEMBER PROCEDURE zwroc(),
+   PRAGMA RESTRICT_REFERENCES (zwroc, RNDS, RNPS, WNPS)
 );
 
 CREATE TYPE czytelnicy_type as object (
@@ -17,4 +19,11 @@ CREATE TYPE czytelnicy_type as object (
     IdUlicy               NUMBER(5),
     Ulica                 VARCHAR(50),
     Telefon               NUMBER(11)
-)
+);
+
+CREATE OR REPLACE TYPE BODY wypozyczalnia_type IS
+    MEMBER PROCEDURE zwroc () IS
+    BEGIN
+        SELF.dataZwrotu:= SELECT CURRENT_TIMESTAMP FROM dual;
+    END;
+END;
