@@ -2,7 +2,9 @@ CREATE TYPE wypozyczenia_type as object (
    dataWypozyczenia       TIMESTAMP,
    zwrotPrzed             TIMESTAMP,
    dataZwrotu             TIMESTAMP,
-   MEMBER PROCEDURE zwroc(),
+   MEMBER FUNCTION wypozyczona RETURN BOOLEAN,
+   MEMBER PROCEDURE zwroc,
+   PROGMA RESTRICT_REFERENCES (wypozyczona, WNDS, RNPS, WNPS),
    PRAGMA RESTRICT_REFERENCES (zwroc, RNDS, RNPS, WNPS)
 );
 
@@ -22,8 +24,17 @@ CREATE TYPE czytelnicy_type as object (
 );
 
 CREATE OR REPLACE TYPE BODY wypozyczalnia_type IS
-    MEMBER PROCEDURE zwroc () IS
+    MEMBER FUNCTION wypozyczona RETURN BOOLEAN IS
     BEGIN
-        SELF.dataZwrotu:= SELECT CURRENT_TIMESTAMP FROM dual;
+        IF self.zwrotPrzed < SYSDATE THEN
+            RETURN FALSE;
+        ELSE
+            RETURN TRUE;
+        end IF;
+    END;
+
+    MEMBER PROCEDURE zwroc IS
+    BEGIN
+        SELF.dataZwrotu:= SYSDATE;
     END;
 END;
