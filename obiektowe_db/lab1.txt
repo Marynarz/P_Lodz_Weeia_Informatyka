@@ -1,3 +1,4 @@
+# 1
 CREATE TYPE wypozyczenia_type as object (
    dataWypozyczenia       TIMESTAMP,
    zwrotPrzed             TIMESTAMP,
@@ -23,7 +24,7 @@ CREATE TYPE czytelnicy_type as object (
     Telefon               NUMBER(11)
 );
 
-CREATE OR REPLACE TYPE BODY wypozyczalnia_type IS
+CREATE OR REPLACE TYPE BODY wypozyczenia_type IS
     MEMBER FUNCTION wypozyczona RETURN BOOLEAN IS
     BEGIN
         IF self.zwrotPrzed < SYSDATE THEN
@@ -37,4 +38,16 @@ CREATE OR REPLACE TYPE BODY wypozyczalnia_type IS
     BEGIN
         SELF.dataZwrotu:= SYSDATE;
     END;
+END;
+
+#3
+DECLARE wypozyczenia wypozyczenia_type;
+BEGIN
+    wypozyczenia:=wypozyczenia_type (TO_DATE('01-04-2021', 'DD-MM-YYYY'),
+                                     TO_DATE('15-04-2021', 'DD-MM-YYYY'),
+                                     0);
+
+    IF wypozyczenia.wypozyczona = TRUE THEN
+        zwroc();
+    END IF;
 END;
